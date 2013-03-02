@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Package Id="1356627457218" Name="Car Repair Process" xmlns="http://www.wfmc.org/2009/XPDL2.2">
+    <PackageHeader>
+        <XPDLVersion>2.2</XPDLVersion>
+        <Vendor>Trisotech (BPMN 2.0 - 3.1)</Vendor>
+        <Created>2012-12-27T11:57:37.218-05:00</Created>
+        <LayoutInfo PixelsPerMillimeter="3.7795277"/>
+    </PackageHeader>
+    <Pages>
+        <Page Height="1539.0" Id="6" Name="Car Repair" Width="3271.0"/>
+        <Page Height="793.0" Id="0" Name="Handle New Found Issue" Width="1122.0"/>
+    </Pages>
+    <Pools/>
+    <WorkflowProcesses>
+        <WorkflowProcess Id="6">
+            <ProcessHeader/>
+            <DataFields>
+                <DataField Id="DF1356627457354" IsArray="false">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="DF1356627457355" IsArray="false">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+                <DataField Id="DF1356627457380" IsArray="false">
+                    <DataType>
+                        <BasicType Type="STRING"/>
+                    </DataType>
+                </DataField>
+            </DataFields>
+            <ActivitySets>
+                <ActivitySet Id="1356627457236">
+                    <Activities>
+                        <Activity Id="_6-737170" Name="Start Repairs">
+                            <Event>
+                                <StartEvent Trigger="None"/>
+                            </Event>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="30.0" PageId="6" Shape="Start Event" ToolId="Trisotech.Visio" Width="30.0">
+                                    <Coordinates XCoordinate="1212.0" YCoordinate="368.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="_6-783470" Name="">
+                            <Route ExclusiveType="Data" GatewayDirection="Unspecified" GatewayType="Exclusive" MarkerVisible="true"/>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="42.0" PageId="6" Shape="Gateway" ToolId="Trisotech.Visio" Width="42.0">
+                                    <Coordinates XCoordinate="1278.0" YCoordinate="362.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity CompletionQuantity="1" Id="_6-651478" IsForCompensation="false" Name="" StartQuantity="1">
+                            <BlockActivity ActivitySetId="1356627457266" View="EXPANDED"/>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="226.0" PageId="6" Shape="Expanded Sub-Process" ToolId="Trisotech.Visio" Width="426.0">
+                                    <Coordinates XCoordinate="1345.0" YCoordinate="579.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity CompletionQuantity="1" Id="_6-872331" IsForCompensation="false" Name="Take Apart for Issue" StartQuantity="1">
+                            <Implementation>
+                                <No/>
+                            </Implementation>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="68.0" PageId="6" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                                    <Coordinates XCoordinate="1355.0" YCoordinate="349.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity CompletionQuantity="1" Id="_6-1514214" IsForCompensation="false" Name="Inspect for Issue" StartQuantity="1">
+                            <Implementation>
+                                <No/>
+                            </Implementation>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="68.0" PageId="6" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                                    <Coordinates XCoordinate="1475.0" YCoordinate="349.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="_6-1776798" Name="">
+                            <Route ExclusiveType="Data" GatewayDirection="Unspecified" GatewayType="Exclusive" MarkerVisible="true"/>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="42.0" PageId="6" Shape="Gateway" ToolId="Trisotech.Visio" Width="42.0">
+                                    <Coordinates XCoordinate="1594.0" YCoordinate="362.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity CompletionQuantity="1" Id="_6-2788153" IsForCompensation="false" Name="Handle New Found Issue" StartQuantity="1">
+                            <BlockActivity ActivitySetId="1356627457271" View="COLLAPSED"/>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="68.0" PageId="6" Shape="Sub-Process" ToolId="Trisotech.Visio" Width="83.0">
+                                    <Coordinates XCoordinate="1653.0" YCoordinate="243.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="_6-1582713" Name="">
+                            <Route ExclusiveType="Data" GatewayDirection="Unspecified" GatewayType="Exclusive" MarkerVisible="true"/>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="42.0" PageId="6" Shape="Gateway" ToolId="Trisotech.Visio" Width="42.0">
+                                    <Coordinates XCoordinate="1752.0" YCoordinate="362.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity CompletionQuantity="1" Id="_6-2157337" IsForCompensation="false" Name="" StartQuantity="1">
+                            <BlockActivity ActivitySetId="1356627457237" View="EXPANDED"/>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="228.0" PageId="6" Shape="Expanded Sub-Process" ToolId="Trisotech.Visio" Width="451.0">
+                                    <Coordinates XCoordinate="1883.0" YCoordinate="577.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity CompletionQuantity="1" Id="_6-1645638" IsForCompensation="false" Name="Repair Issue" StartQuantity="1">
+                            <Implementation>
+                                <No/>
+                            </Implementation>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="68.0" PageId="6" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                                    <Coordinates XCoordinate="1903.0" YCoordinate="349.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity CompletionQuantity="1" Id="_6-2311688" IsForCompensation="false" Name="Verify if more Issues on Itemized List" StartQuantity="1">
+                            <Implementation>
+                                <No/>
+                            </Implementation>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="68.0" PageId="6" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                                    <Coordinates XCoordinate="2033.0" YCoordinate="349.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="_6-935957" Name="Have further issues?">
+                            <Route ExclusiveType="Data" GatewayDirection="Unspecified" GatewayType="Exclusive" MarkerVisible="true"/>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="42.0" PageId="6" Shape="Gateway" ToolId="Trisotech.Visio" Width="42.0">
+                                    <Coordinates XCoordinate="2164.0" YCoordinate="362.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity CompletionQuantity="1" Id="_6-2419235" IsForCompensation="false" Name="Prepare Car for Remittance" StartQuantity="1">
+                            <Implementation>
+                                <No/>
+                            </Implementation>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="68.0" PageId="6" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                                    <Coordinates XCoordinate="2288.0" YCoordinate="349.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="_6-1024431" Name="Repairs Completed">
+                            <Event>
+                                <EndEvent Result="None"/>
+                            </Event>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="32.0" PageId="6" Shape="End Event" ToolId="Trisotech.Visio" Width="32.0">
+                                    <Coordinates XCoordinate="2424.0" YCoordinate="367.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                    </Activities>
+                    <DataObjects>
+                        <DataObject Id="_6-2508241" Name="Itemized  Issues" State="Accepted">
+                            <DataFieldRef Id="DF1356627457354"/>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="38.0" PageId="6" Shape="Data Object" ToolId="Trisotech.Visio" Width="30.0">
+                                    <Coordinates XCoordinate="2033.0" YCoordinate="243.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </DataObject>
+                    </DataObjects>
+                    <Transitions>
+                        <Transition From="_6-737170" Id="_6-815908" Name="" To="_6-783470">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="1242.0" YCoordinate="383.0"/>
+                                    <Coordinates XCoordinate="1278.0" YCoordinate="383.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="_6-783470" Id="_6-919609" Name="" To="_6-872331">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="1319.0" YCoordinate="383.0"/>
+                                    <Coordinates XCoordinate="1337.0" YCoordinate="383.0"/>
+                                    <Coordinates XCoordinate="1355.0" YCoordinate="383.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="_6-935957" Id="_6-990368" Name="More Issues to Repair" To="_6-783470">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="2184.0" YCoordinate="404.0"/>
+                                    <Coordinates XCoordinate="2184.0" YCoordinate="443.0"/>
+                                    <Coordinates XCoordinate="1298.0" YCoordinate="443.0"/>
+                                    <Coordinates XCoordinate="1299.0" YCoordinate="404.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="_6-935957" Id="_6-1048090" Name="No More Issues to Repair" To="_6-2419235">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="2205.0" YCoordinate="383.0"/>
+                                    <Coordinates XCoordinate="2223.0" YCoordinate="383.0"/>
+                                    <Coordinates XCoordinate="2288.0" YCoordinate="383.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="_6-872331" Id="_6-1541168" Name="" To="_6-1514214">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="1439.0" YCoordinate="383.0"/>
+                                    <Coordinates XCoordinate="1475.0" YCoordinate="383.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="_6-1776798" Id="_6-1628881" Name="" To="_6-1582713">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="1635.0" YCoordinate="383.0"/>
+                                    <Coordinates XCoordinate="1752.0" YCoordinate="383.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="_6-1582713" Id="_6-1687834" Name="No Added  Issue Found" To="_6-1645638">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="1793.0" YCoordinate="383.0"/>
+                                    <Coordinates XCoordinate="1811.0" YCoordinate="383.0"/>
+                                    <Coordinates XCoordinate="1903.0" YCoordinate="383.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="_6-1582713" Id="_6-1734654" Name="New Issue  Found" To="_6-2788153">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="1773.0" YCoordinate="362.0"/>
+                                    <Coordinates XCoordinate="1773.0" YCoordinate="277.0"/>
+                                    <Coordinates XCoordinate="1736.0" YCoordinate="277.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="_6-1514214" Id="_6-1811452" Name="" To="_6-1776798">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="1558.0" YCoordinate="383.0"/>
+                                    <Coordinates XCoordinate="1576.0" YCoordinate="383.0"/>
+                                    <Coordinates XCoordinate="1594.0" YCoordinate="383.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="_6-2788153" Id="_6-1863207" Name="Refuse New Issue Estimate and Continue with Original Estimate" To="_6-1776798">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="1653.0" YCoordinate="277.0"/>
+                                    <Coordinates XCoordinate="1615.0" YCoordinate="277.0"/>
+                                    <Coordinates XCoordinate="1614.0" YCoordinate="362.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="_6-1645638" Id="_6-2358862" Name="" To="_6-2311688">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="1986.0" YCoordinate="383.0"/>
+                                    <Coordinates XCoordinate="2033.0" YCoordinate="383.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="_6-2311688" Id="_6-2362248" Name="" To="_6-935957">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="2116.0" YCoordinate="383.0"/>
+                                    <Coordinates XCoordinate="2134.0" YCoordinate="383.0"/>
+                                    <Coordinates XCoordinate="2164.0" YCoordinate="383.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="_6-2419235" Id="_6-2474423" Name="" To="_6-1024431">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="2371.0" YCoordinate="383.0"/>
+                                    <Coordinates XCoordinate="2389.0" YCoordinate="383.0"/>
+                                    <Coordinates XCoordinate="2424.0" YCoordinate="383.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                    </Transitions>
+                    <DataAssociations>
+                        <DataAssociation From="_6-2508241" Id="_6-2536627" Name="" To="_6-2311688">
+                            <Object Id="1356627457346"/>
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="2063.0" YCoordinate="262.0"/>
+                                    <Coordinates XCoordinate="2088.0" YCoordinate="262.0"/>
+                                    <Coordinates XCoordinate="2089.0" YCoordinate="349.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </DataAssociation>
+                    </DataAssociations>
+                </ActivitySet>
+                <ActivitySet Id="1356627457266" TriggeredByEvent="true">
+                    <Activities>
+                        <Activity Id="_6-680730" Name="Customer Requests Additional  Repairs">
+                            <Event>
+                                <StartEvent Interrupting="false" Trigger="Signal"/>
+                            </Event>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="30.0" PageId="6" Shape="Start Event" ToolId="Trisotech.Visio" Width="30.0">
+                                    <Coordinates XCoordinate="1387.0" YCoordinate="702.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity CompletionQuantity="1" Id="_6-1256338" IsForCompensation="false" Name="Add Additional Issue to List" StartQuantity="1">
+                            <Implementation>
+                                <No/>
+                            </Implementation>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="68.0" PageId="6" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                                    <Coordinates XCoordinate="1482.0" YCoordinate="683.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="_6-1354552" Name="Issue List Amended By Customer">
+                            <Event>
+                                <EndEvent Result="None"/>
+                            </Event>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="32.0" PageId="6" Shape="End Event" ToolId="Trisotech.Visio" Width="32.0">
+                                    <Coordinates XCoordinate="1659.0" YCoordinate="701.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                    </Activities>
+                    <DataObjects>
+                        <DataObject Id="_6-1210318" Name="Itemized  Issues" State="Amended">
+                            <DataFieldRef Id="DF1356627457354"/>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="38.0" PageId="6" Shape="Data Object" ToolId="Trisotech.Visio" Width="30.0">
+                                    <Coordinates XCoordinate="1562.0" YCoordinate="589.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </DataObject>
+                    </DataObjects>
+                    <Transitions>
+                        <Transition From="_6-680730" Id="_6-1311120" Name="" To="_6-1256338">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="1417.0" YCoordinate="717.0"/>
+                                    <Coordinates XCoordinate="1435.0" YCoordinate="717.0"/>
+                                    <Coordinates XCoordinate="1482.0" YCoordinate="717.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="_6-1256338" Id="_6-1399893" Name="" To="_6-1354552">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="1565.0" YCoordinate="717.0"/>
+                                    <Coordinates XCoordinate="1583.0" YCoordinate="717.0"/>
+                                    <Coordinates XCoordinate="1659.0" YCoordinate="717.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                    </Transitions>
+                    <DataAssociations>
+                        <DataAssociation From="_6-1256338" Id="_6-1425443" Name="" To="_6-1210318">
+                            <Object Id="1356627457319"/>
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="1498.0" YCoordinate="683.0"/>
+                                    <Coordinates XCoordinate="1498.0" YCoordinate="608.0"/>
+                                    <Coordinates XCoordinate="1562.0" YCoordinate="608.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </DataAssociation>
+                    </DataAssociations>
+                </ActivitySet>
+                <ActivitySet Id="1356627457271">
+                    <Activities>
+                        <Activity CompletionQuantity="1" Id="0-2824566" IsForCompensation="false" Name="Estimate New Found Issue" StartQuantity="1">
+                            <Implementation>
+                                <No/>
+                            </Implementation>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="68.0" PageId="0" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                                    <Coordinates XCoordinate="264.0" YCoordinate="333.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity CompletionQuantity="1" Id="0-2855698" IsForCompensation="false" Name="Verify if Estimate for New Issue Accepted" StartQuantity="1">
+                            <Implementation>
+                                <No/>
+                            </Implementation>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="68.0" PageId="0" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                                    <Coordinates XCoordinate="403.0" YCoordinate="333.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="0-2932459" Name="">
+                            <Route ExclusiveType="Data" GatewayDirection="Unspecified" GatewayType="Exclusive" MarkerVisible="true"/>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="42.0" PageId="0" Shape="Gateway" ToolId="Trisotech.Visio" Width="42.0">
+                                    <Coordinates XCoordinate="523.0" YCoordinate="346.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity CompletionQuantity="1" Id="0-3016416" IsForCompensation="false" Name="Add New Issue to List" StartQuantity="1">
+                            <Implementation>
+                                <No/>
+                            </Implementation>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="68.0" PageId="0" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                                    <Coordinates XCoordinate="652.0" YCoordinate="333.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="0-3189975" Name="Repairs Aborted">
+                            <Event>
+                                <EndEvent Result="Signal">
+                                    <TriggerResultSignal CatchThrow="THROW">
+                                        <Properties/>
+                                    </TriggerResultSignal>
+                                </EndEvent>
+                            </Event>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="32.0" PageId="0" Shape="End Event" ToolId="Trisotech.Visio" Width="32.0">
+                                    <Coordinates XCoordinate="618.0" YCoordinate="435.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="0-3262390" Name="">
+                            <Event>
+                                <StartEvent Trigger="None"/>
+                            </Event>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="30.0" PageId="0" Shape="Start Event" ToolId="Trisotech.Visio" Width="30.0">
+                                    <Coordinates XCoordinate="177.0" YCoordinate="352.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="0-3332511" Name="Issue List Amended with New Found Issue">
+                            <Event>
+                                <EndEvent Result="None"/>
+                            </Event>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="32.0" PageId="0" Shape="End Event" ToolId="Trisotech.Visio" Width="32.0">
+                                    <Coordinates XCoordinate="840.0" YCoordinate="351.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                    </Activities>
+                    <DataObjects>
+                        <DataObject Id="0-3093946" Name="Itemized  Issues" State="Amended">
+                            <DataFieldRef Id="DF1356627457380"/>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="38.0" PageId="0" Shape="Data Object" ToolId="Trisotech.Visio" Width="30.0">
+                                    <Coordinates XCoordinate="747.0" YCoordinate="242.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </DataObject>
+                    </DataObjects>
+                    <Transitions>
+                        <Transition From="0-2824566" Id="0-2917961" Name="" To="0-2855698">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="0" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="347.0" YCoordinate="367.0"/>
+                                    <Coordinates XCoordinate="403.0" YCoordinate="367.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="0-2855698" Id="0-2963101" Name="" To="0-2932459">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="0" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="487.0" YCoordinate="367.0"/>
+                                    <Coordinates XCoordinate="523.0" YCoordinate="367.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="0-2932459" Id="0-3078509" Name="New Issue Estimate Accepted" To="0-3016416">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="0" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="564.0" YCoordinate="367.0"/>
+                                    <Coordinates XCoordinate="652.0" YCoordinate="367.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="0-2932459" Id="0-3231865" Name="New Issue Estimate Refused and Abort Repairs" To="0-3189975">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="0" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="543.0" YCoordinate="388.0"/>
+                                    <Coordinates XCoordinate="543.0" YCoordinate="452.0"/>
+                                    <Coordinates XCoordinate="618.0" YCoordinate="451.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="0-3262390" Id="0-3298811" Name="" To="0-2824566">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="0" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="208.0" YCoordinate="367.0"/>
+                                    <Coordinates XCoordinate="264.0" YCoordinate="367.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="0-3016416" Id="0-3382082" Name="" To="0-3332511">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="0" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="735.0" YCoordinate="367.0"/>
+                                    <Coordinates XCoordinate="840.0" YCoordinate="367.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                    </Transitions>
+                    <DataAssociations>
+                        <DataAssociation From="0-3016416" Id="0-3120472" Name="" To="0-3093946">
+                            <Object Id="1356627457375"/>
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="0" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="718.0" YCoordinate="333.0"/>
+                                    <Coordinates XCoordinate="718.0" YCoordinate="261.0"/>
+                                    <Coordinates XCoordinate="747.0" YCoordinate="261.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </DataAssociation>
+                    </DataAssociations>
+                </ActivitySet>
+                <ActivitySet Id="1356627457237" TriggeredByEvent="true">
+                    <Activities>
+                        <Activity Id="_6-2166825" Name="Repairs Aborted">
+                            <Event>
+                                <StartEvent Trigger="Signal"/>
+                            </Event>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="30.0" PageId="6" Shape="Start Event" ToolId="Trisotech.Visio" Width="30.0">
+                                    <Coordinates XCoordinate="1940.0" YCoordinate="701.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity CompletionQuantity="1" Id="_6-2215166" IsForCompensation="false" Name="Prepare Car for remittance" StartQuantity="1">
+                            <Implementation>
+                                <No/>
+                            </Implementation>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="68.0" PageId="6" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                                    <Coordinates XCoordinate="2018.0" YCoordinate="683.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                        <Activity Id="_6-2599544" Name="Repairs Aborted">
+                            <Event>
+                                <EndEvent Result="Terminate">
+                                    <ResultTerminate/>
+                                </EndEvent>
+                            </Event>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="32.0" PageId="6" Shape="End Event" ToolId="Trisotech.Visio" Width="32.0">
+                                    <Coordinates XCoordinate="2231.0" YCoordinate="701.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </Activity>
+                    </Activities>
+                    <DataObjects>
+                        <DataObject Id="_6-2657573" Name="Itemized  Issues" State="Completd Items">
+                            <DataFieldRef Id="DF1356627457354"/>
+                            <NodeGraphicsInfos>
+                                <NodeGraphicsInfo Height="38.0" PageId="6" Shape="Data Object" ToolId="Trisotech.Visio" Width="30.0">
+                                    <Coordinates XCoordinate="2090.0" YCoordinate="587.0"/>
+                                </NodeGraphicsInfo>
+                            </NodeGraphicsInfos>
+                        </DataObject>
+                    </DataObjects>
+                    <Transitions>
+                        <Transition From="_6-2166825" Id="_6-2258346" Name="" To="_6-2215166">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="1970.0" YCoordinate="717.0"/>
+                                    <Coordinates XCoordinate="1988.0" YCoordinate="717.0"/>
+                                    <Coordinates XCoordinate="2018.0" YCoordinate="717.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                        <Transition From="_6-2215166" Id="_6-2634208" Name="" To="_6-2599544">
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="2101.0" YCoordinate="717.0"/>
+                                    <Coordinates XCoordinate="2119.0" YCoordinate="717.0"/>
+                                    <Coordinates XCoordinate="2231.0" YCoordinate="717.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </Transition>
+                    </Transitions>
+                    <DataAssociations>
+                        <DataAssociation From="_6-2215166" Id="_6-2693060" Name="" To="_6-2657573">
+                            <Object Id="1356627457349"/>
+                            <ConnectorGraphicsInfos>
+                                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                                    <Coordinates XCoordinate="2035.0" YCoordinate="683.0"/>
+                                    <Coordinates XCoordinate="2035.0" YCoordinate="606.0"/>
+                                    <Coordinates XCoordinate="2090.0" YCoordinate="606.0"/>
+                                </ConnectorGraphicsInfo>
+                            </ConnectorGraphicsInfos>
+                        </DataAssociation>
+                    </DataAssociations>
+                </ActivitySet>
+            </ActivitySets>
+            <Activities>
+                <Activity Id="_6-51263" Name="Customer Arrives">
+                    <Event>
+                        <StartEvent Trigger="None"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="30.0" PageId="6" Shape="Start Event" ToolId="Trisotech.Visio" Width="30.0">
+                            <Coordinates XCoordinate="645.0" YCoordinate="525.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_6-102905" IsForCompensation="false" Name="Make Estimate" StartQuantity="1">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" PageId="6" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                            <Coordinates XCoordinate="711.0" YCoordinate="507.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_6-210026" IsForCompensation="false" Name="Verify if Estimate Accepted" StartQuantity="1">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" PageId="6" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                            <Coordinates XCoordinate="831.0" YCoordinate="507.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_6-278688" Name="Accepted?">
+                    <Route ExclusiveType="Data" GatewayDirection="Unspecified" GatewayType="Exclusive" MarkerVisible="true"/>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="42.0" PageId="6" Shape="Gateway" ToolId="Trisotech.Visio" Width="42.0">
+                            <Coordinates XCoordinate="951.0" YCoordinate="520.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_6-348059" Name="Initial Estimate Not Accepted">
+                    <Event>
+                        <EndEvent Result="None"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="32.0" PageId="6" Shape="End Event" ToolId="Trisotech.Visio" Width="32.0">
+                            <Coordinates XCoordinate="1006.0" YCoordinate="648.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_6-460805" IsForCompensation="false" Name="Repair Car" StartQuantity="1">
+                    <BlockActivity ActivitySetId="1356627457236" View="EXPANDED"/>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="720.0" PageId="6" Shape="Expanded Sub-Process" ToolId="Trisotech.Visio" Width="1327.0">
+                            <Coordinates XCoordinate="1171.0" YCoordinate="123.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_6-495667" IsForCompensation="false" Name="Prepare Invoice" StartQuantity="1">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" PageId="6" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                            <Coordinates XCoordinate="2562.0" YCoordinate="349.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_6-551229" IsForCompensation="false" Name="Remit Car" StartQuantity="1">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" PageId="6" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                            <Coordinates XCoordinate="2785.0" YCoordinate="349.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_6-583290" Name="Customer Leaves Shop">
+                    <Event>
+                        <EndEvent Result="None"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="32.0" PageId="6" Shape="End Event" ToolId="Trisotech.Visio" Width="32.0">
+                            <Coordinates XCoordinate="2912.0" YCoordinate="367.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_6-2039832" IsForCompensation="false" Name="Accept Payment" StartQuantity="1">
+                    <Implementation>
+                        <No/>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" PageId="6" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                            <Coordinates XCoordinate="2678.0" YCoordinate="349.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+            </Activities>
+            <DataObjects>
+                <DataObject Id="_6-1087187" Name="Itemized  Issues" State="Estimated">
+                    <DataFieldRef Id="DF1356627457354"/>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="38.0" PageId="6" Shape="Data Object" ToolId="Trisotech.Visio" Width="30.0">
+                            <Coordinates XCoordinate="798.0" YCoordinate="645.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </DataObject>
+                <DataObject Id="_6-1888608" Name="Reported Issues">
+                    <DataFieldRef Id="DF1356627457355"/>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="38.0" PageId="6" Shape="Data Object" ToolId="Trisotech.Visio" Width="30.0">
+                            <Coordinates XCoordinate="687.0" YCoordinate="420.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </DataObject>
+            </DataObjects>
+            <DataInputOutputs/>
+            <Transitions>
+                <Transition From="_6-51263" Id="_6-126760" Name="" To="_6-102905">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="675.0" YCoordinate="541.0"/>
+                            <Coordinates XCoordinate="693.0" YCoordinate="541.0"/>
+                            <Coordinates XCoordinate="711.0" YCoordinate="541.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_6-102905" Id="_6-176833" Name="" To="_6-210026">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="795.0" YCoordinate="541.0"/>
+                            <Coordinates XCoordinate="831.0" YCoordinate="541.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_6-210026" Id="_6-297078" Name="" To="_6-278688">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="915.0" YCoordinate="541.0"/>
+                            <Coordinates XCoordinate="933.0" YCoordinate="541.0"/>
+                            <Coordinates XCoordinate="951.0" YCoordinate="541.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_6-278688" Id="_6-384391" Name="Initial Estimate Not Accepted" To="_6-348059">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="971.0" YCoordinate="561.0"/>
+                            <Coordinates XCoordinate="971.0" YCoordinate="663.0"/>
+                            <Coordinates XCoordinate="1006.0" YCoordinate="664.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_6-278688" Id="_6-425172" Name="Initial Estimate Accepted" To="_6-460805">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="971.0" YCoordinate="520.0"/>
+                            <Coordinates XCoordinate="971.0" YCoordinate="383.0"/>
+                            <Coordinates XCoordinate="1171.0" YCoordinate="383.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_6-551229" Id="_6-619719" Name="" To="_6-583290">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="2868.0" YCoordinate="383.0"/>
+                            <Coordinates XCoordinate="2886.0" YCoordinate="383.0"/>
+                            <Coordinates XCoordinate="2912.0" YCoordinate="383.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_6-460805" Id="_6-1970105" Name="" To="_6-495667">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="2498.0" YCoordinate="383.0"/>
+                            <Coordinates XCoordinate="2516.0" YCoordinate="383.0"/>
+                            <Coordinates XCoordinate="2562.0" YCoordinate="383.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_6-495667" Id="_6-2048271" Name="" To="_6-2039832">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="2645.0" YCoordinate="383.0"/>
+                            <Coordinates XCoordinate="2678.0" YCoordinate="383.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_6-2039832" Id="_6-2105997" Name="" To="_6-551229">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="2761.0" YCoordinate="383.0"/>
+                            <Coordinates XCoordinate="2785.0" YCoordinate="383.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+            </Transitions>
+            <DataAssociations>
+                <DataAssociation From="_6-102905" Id="_6-1137402" Name="" To="_6-1087187">
+                    <Object Id="1356627457313"/>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="753.0" YCoordinate="575.0"/>
+                            <Coordinates XCoordinate="753.0" YCoordinate="664.0"/>
+                            <Coordinates XCoordinate="798.0" YCoordinate="664.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+                <DataAssociation From="_6-1087187" Id="_6-1191953" Name="" To="_6-210026">
+                    <Object Id="1356627457315"/>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="829.0" YCoordinate="664.0"/>
+                            <Coordinates XCoordinate="873.0" YCoordinate="664.0"/>
+                            <Coordinates XCoordinate="873.0" YCoordinate="575.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+                <DataAssociation From="_6-1888608" Id="_6-1928113" Name="" To="_6-102905">
+                    <Object Id="1356627457332"/>
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="6" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="718.0" YCoordinate="439.0"/>
+                            <Coordinates XCoordinate="753.0" YCoordinate="439.0"/>
+                            <Coordinates XCoordinate="753.0" YCoordinate="507.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </DataAssociation>
+            </DataAssociations>
+        </WorkflowProcess>
+    </WorkflowProcesses>
+    <bpsim:BPSimData xmlns:bpsim="http://www.bpsim.org/schemas/1.0">
+        <bpsim:Scenario author="Tim Stephenson" created="2012-06-13T09:47:00" id="scenario1" modified="2012-12-20T13:19:00" name="Scenario 1: Main flow without sub-processes">
+
+            <bpsim:ScenarioParameters baseTimeUnit="min" replication="3">
+                <bpsim:Start>
+                    <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                </bpsim:Start>
+                <bpsim:Duration>
+                    <bpsim:DurationParameter value="PT40H"/>
+                </bpsim:Duration>
+            </bpsim:ScenarioParameters>
+            
+            <bpsim:ElementParameters elementRef="_6">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            
+            <bpsim:ElementParameters elementRef="_6-1645638">
+                <bpsim:PropertyParameters>
+                    <bpsim:Property name="noOfIssues">
+                        <bpsim:ParameterValue instance="getProperty('noOfIssues') - 1"/>
+                    </bpsim:Property>
+                </bpsim:PropertyParameters>
+            </bpsim:ElementParameters>
+
+            <bpsim:ElementParameters elementRef="_6-990368">
+                <bpsim:ControlParameters>
+                    <!-- no more issues -->
+                    <bpsim:Condition>
+                        <bpsim:ExpressionParameter instance="noOfIssues" value="getProperty('noOfIssues') = 0"/>
+                    </bpsim:Condition>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+
+            <bpsim:ElementParameters elementRef="_6-1048090">
+                <bpsim:ControlParameters>
+                    <!-- have more issues -->
+                    <bpsim:Condition>
+                        <bpsim:ExpressionParameter instance="noOfIssues" value="getProperty('noOfIssues') != 0"/>
+                    </bpsim:Condition>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters> 
+
+            <bpsim:ElementParameters elementRef="_6-51263">
+                <bpsim:ControlParameters>
+                    <bpsim:InterTriggerTimer>
+                        <bpsim:DurationParameter value="PT24M"/>
+                    </bpsim:InterTriggerTimer>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+                <bpsim:PropertyParameters>
+                    <bpsim:Property name="numberOfIssues">
+                        <bpsim:TruncatedNormalDistribution max="1000" mean="2" min="1" standardDeviation="1"/>
+                    </bpsim:Property>
+                </bpsim:PropertyParameters>
+            </bpsim:ElementParameters>
+    
+            <bpsim:ElementParameters elementRef="_6-425172">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="0.67"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_6-384391">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="0.33"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_6-1734654">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="0.25"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_6-1687834">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="0.75"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_6-126760">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_6-1645638">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_6-583290">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_6-348059">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_6-737170">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_6-1024431">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_6-2166825">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_6-2599544">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+        </bpsim:Scenario>
+        
+        <bpsim:Scenario id="scenario2" name="Scenario 2: Main and secondary paths" author="Tim Stephenson" inherits="scenario1">
+            <bpsim:ElementParameters elementRef="_6-2166825">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="0.05"/>
+                    </bpsim:Probability>
+                    <bpsim:InterTriggerTimer>
+                        <bpsim:DurationParameter value="PT0M"/>
+                    </bpsim:InterTriggerTimer>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                        <bpsim:FloatingParameter value="1"/>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_6-2599544">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+        </bpsim:Scenario>
+    </bpsim:BPSimData>
+</Package>
