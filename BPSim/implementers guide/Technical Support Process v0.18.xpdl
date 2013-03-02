@@ -1,0 +1,1320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Package Id="1356636036250" Name="Technical Support Process v0.15" xmlns="http://www.wfmc.org/2009/XPDL2.2">
+    <PackageHeader>
+        <XPDLVersion>
+			2.2
+		</XPDLVersion>
+        <Vendor>Trisotech (BPMN 2.0 - 3.1)</Vendor>
+        <Created>2012-12-27T14:20:36.265-05:00</Created>
+        <LayoutInfo PixelsPerMillimeter="3.7795277"/>
+    </PackageHeader>
+    <RedefinableHeader>
+        <Author>Alberto Manuel</Author>
+    </RedefinableHeader>
+    <Participants>
+        <Participant Id="P1356636036266" Name="Customer">
+            <ParticipantType Type="ORGANIZATIONAL_UNIT"/>
+        </Participant>
+        <Participant Id="P1356636036268" Name="Front Office">
+            <ParticipantType Type="ORGANIZATIONAL_UNIT"/>
+        </Participant>
+        <Participant Id="P1356636036298" Name="1st Level Techical Support Agent">
+            <ParticipantType Type="ORGANIZATIONAL_UNIT"/>
+        </Participant>
+        <Participant Id="P1356636036312" Name="2nd Level Techical Support Agent">
+            <ParticipantType Type="ORGANIZATIONAL_UNIT"/>
+        </Participant>
+        <Participant Id="P1356636036323" Name="Supplier">
+            <ParticipantType Type="ORGANIZATIONAL_UNIT"/>
+        </Participant>
+    </Participants>
+    <Pages>
+        <Page Height="4522.0" Id="10" Name="Scenario 1" Width="2197.0"/>
+    </Pages>
+    <Pools>
+        <Pool BoundaryVisible="true" Id="_10-1" MainPool="true" Name="Customer" Orientation="HORIZONTAL" Participant="P1356636036266">
+            <Lanes/>
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo Height="72.0" PageId="10" Shape="Pool" ToolId="Trisotech.Visio" Width="936.0">
+                    <Coordinates XCoordinate="93.0" YCoordinate="2736.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+        <Pool BoundaryVisible="true" Id="_10-10" MainPool="true" Name="Front Office" Orientation="HORIZONTAL" Participant="P1356636036268" Process="WFP-10-4">
+            <Lanes/>
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo Height="354.0" PageId="10" Shape="Pool" ToolId="Trisotech.Visio" Width="936.0">
+                    <Coordinates XCoordinate="93.0" YCoordinate="2850.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+        <Pool BoundaryVisible="true" Id="_10-18" MainPool="true" Name="1st Level Techical Support Agent" Orientation="HORIZONTAL" Participant="P1356636036298" Process="WFP-10-1">
+            <Lanes/>
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo Height="240.0" PageId="10" Shape="Pool" ToolId="Trisotech.Visio" Width="936.0">
+                    <Coordinates XCoordinate="93.0" YCoordinate="3264.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+        <Pool BoundaryVisible="true" Id="_10-26" MainPool="true" Name="2nd Level Techical Support Agent" Orientation="HORIZONTAL" Participant="P1356636036312" Process="WFP-10-2">
+            <Lanes/>
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo Height="246.0" PageId="10" Shape="Pool" ToolId="Trisotech.Visio" Width="936.0">
+                    <Coordinates XCoordinate="93.0" YCoordinate="3558.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+        <Pool BoundaryVisible="true" Id="_10-34" MainPool="true" Name="Supplier" Orientation="HORIZONTAL" Participant="P1356636036323" Process="WFP-10-5">
+            <Lanes/>
+            <NodeGraphicsInfos>
+                <NodeGraphicsInfo Height="168.0" PageId="10" Shape="Pool" ToolId="Trisotech.Visio" Width="936.0">
+                    <Coordinates XCoordinate="93.0" YCoordinate="3852.0"/>
+                </NodeGraphicsInfo>
+            </NodeGraphicsInfos>
+        </Pool>
+    </Pools>
+    <MessageFlows>
+        <MessageFlow Id="_10-55" Name="" Source="_10-1" Target="_10-42">
+            <Object Id="1356636036333"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                    <Coordinates XCoordinate="163.0" YCoordinate="2808.0"/>
+                    <Coordinates XCoordinate="163.0" YCoordinate="2822.0"/>
+                    <Coordinates XCoordinate="165.0" YCoordinate="2822.0"/>
+                    <Coordinates XCoordinate="165.0" YCoordinate="3087.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_10-110" Name="" Source="_10-57" Target="_10-1">
+            <Object Id="1356636036336"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                    <Coordinates XCoordinate="244.0" YCoordinate="3068.0"/>
+                    <Coordinates XCoordinate="244.0" YCoordinate="3054.0"/>
+                    <Coordinates XCoordinate="242.0" YCoordinate="3054.0"/>
+                    <Coordinates XCoordinate="242.0" YCoordinate="2808.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_10-112" Name="" Source="_10-1" Target="_10-57">
+            <Object Id="1356636036338"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                    <Coordinates XCoordinate="271.0" YCoordinate="2808.0"/>
+                    <Coordinates XCoordinate="271.0" YCoordinate="2822.0"/>
+                    <Coordinates XCoordinate="271.0" YCoordinate="3068.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_10-191" Name="" Source="_10-138" Target="_10-1">
+            <Object Id="1356636036346"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                    <Coordinates XCoordinate="685.0" YCoordinate="2898.0"/>
+                    <Coordinates XCoordinate="685.0" YCoordinate="2884.0"/>
+                    <Coordinates XCoordinate="687.0" YCoordinate="2884.0"/>
+                    <Coordinates XCoordinate="687.0" YCoordinate="2808.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_10-193" Name="" Source="_10-1" Target="_10-138">
+            <Object Id="1356636036348"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                    <Coordinates XCoordinate="715.0" YCoordinate="2808.0"/>
+                    <Coordinates XCoordinate="715.0" YCoordinate="2822.0"/>
+                    <Coordinates XCoordinate="713.0" YCoordinate="2822.0"/>
+                    <Coordinates XCoordinate="713.0" YCoordinate="2898.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_10-301" Name="" Source="_10-235" Target="_10-288">
+            <Object Id="1356636036361"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                    <Coordinates XCoordinate="605.0" YCoordinate="3136.0"/>
+                    <Coordinates XCoordinate="605.0" YCoordinate="3228.0"/>
+                    <Coordinates XCoordinate="164.0" YCoordinate="3228.0"/>
+                    <Coordinates XCoordinate="165.0" YCoordinate="3321.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_10-452" Name="" Source="_10-380" Target="_10-433">
+            <Object Id="1356636036375"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                    <Coordinates XCoordinate="699.0" YCoordinate="3302.0"/>
+                    <Coordinates XCoordinate="699.0" YCoordinate="3288.0"/>
+                    <Coordinates XCoordinate="699.0" YCoordinate="3118.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_10-524" Name="" Source="_10-458" Target="_10-511">
+            <Object Id="1356636036380"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                    <Coordinates XCoordinate="486.0" YCoordinate="3466.0"/>
+                    <Coordinates XCoordinate="486.0" YCoordinate="3518.0"/>
+                    <Coordinates XCoordinate="164.0" YCoordinate="3518.0"/>
+                    <Coordinates XCoordinate="165.0" YCoordinate="3623.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_10-742" Name="" Source="_10-617" Target="_10-723">
+            <Object Id="1356636036394"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                    <Coordinates XCoordinate="699.0" YCoordinate="3604.0"/>
+                    <Coordinates XCoordinate="699.0" YCoordinate="3448.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_10-900" Name="" Source="_10-847" Target="_10-760">
+            <Object Id="1356636036410"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                    <Coordinates XCoordinate="699.0" YCoordinate="3902.0"/>
+                    <Coordinates XCoordinate="699.0" YCoordinate="3888.0"/>
+                    <Coordinates XCoordinate="699.0" YCoordinate="3750.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_10-918" Name="" Source="_10-670" Target="_10-781">
+            <Object Id="1356636036413"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                    <Coordinates XCoordinate="486.0" YCoordinate="3768.0"/>
+                    <Coordinates XCoordinate="486.0" YCoordinate="3828.0"/>
+                    <Coordinates XCoordinate="168.0" YCoordinate="3828.0"/>
+                    <Coordinates XCoordinate="168.0" YCoordinate="3921.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+        <MessageFlow Id="_10-973" Name="" Source="_10-920" Target="_10-1">
+            <Object Id="1356636036423"/>
+            <ConnectorGraphicsInfos>
+                <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                    <Coordinates XCoordinate="486.0" YCoordinate="3068.0"/>
+                    <Coordinates XCoordinate="486.0" YCoordinate="3054.0"/>
+                    <Coordinates XCoordinate="486.0" YCoordinate="2808.0"/>
+                </ConnectorGraphicsInfo>
+            </ConnectorGraphicsInfos>
+        </MessageFlow>
+    </MessageFlows>
+    <WorkflowProcesses>
+        <WorkflowProcess Id="WFP-10-1">
+            <ProcessHeader/>
+            <Activities>
+                <Activity Id="_10-723" Name="Solution received from 2nd level of support">
+                    <Event>
+                        <IntermediateEvent Trigger="Message">
+                            <TriggerResultMessage CatchThrow="CATCH">
+                                <Message Id="1356636036300"/>
+                            </TriggerResultMessage>
+                        </IntermediateEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="32.0" PageId="10" Shape="Intermediate Event" ToolId="Trisotech.Visio" Width="32.0">
+                            <Coordinates XCoordinate="683.0" YCoordinate="3416.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_10-356" Name="">
+                    <Route ExclusiveType="Data" GatewayDirection="Unspecified" GatewayType="Exclusive" MarkerVisible="true"/>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="42.0" PageId="10" Shape="Gateway" ToolId="Trisotech.Visio" Width="42.0">
+                            <Coordinates XCoordinate="324.0" YCoordinate="3315.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_10-303" IsForCompensation="false" Name="Find solution 1st level issue" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskManual/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" PageId="10" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                            <Coordinates XCoordinate="208.0" YCoordinate="3302.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_10-380" IsForCompensation="false" Name="Provide solution to Front Office" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskManual/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" PageId="10" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                            <Coordinates XCoordinate="658.0" YCoordinate="3302.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_10-288" Name="1st level Issue">
+                    <Event>
+                        <StartEvent Trigger="Message">
+                            <TriggerResultMessage>
+                                <Message Id="1356636036305"/>
+                            </TriggerResultMessage>
+                        </StartEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="30.0" PageId="10" Shape="Start Event" ToolId="Trisotech.Visio" Width="30.0">
+                            <Coordinates XCoordinate="150.0" YCoordinate="3321.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_10-458" IsForCompensation="false" Name="Request 2nd level support" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskManual/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" PageId="10" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                            <Coordinates XCoordinate="445.0" YCoordinate="3398.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_10-577" Name="Issue handled by 1st level support">
+                    <Event>
+                        <EndEvent Result="None"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="32.0" PageId="10" Shape="End Event" ToolId="Trisotech.Visio" Width="32.0">
+                            <Coordinates XCoordinate="954.0" YCoordinate="3320.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="_10-288" Id="_10-354" Name="" To="_10-303">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="180.0" YCoordinate="3336.0"/>
+                            <Coordinates XCoordinate="194.0" YCoordinate="3336.0"/>
+                            <Coordinates XCoordinate="208.0" YCoordinate="3336.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-303" Id="_10-378" Name="" To="_10-356">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="291.0" YCoordinate="3336.0"/>
+                            <Coordinates XCoordinate="305.0" YCoordinate="3336.0"/>
+                            <Coordinates XCoordinate="324.0" YCoordinate="3336.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-356" Id="_10-431" Name="Able to provide  1st level solution" To="_10-380">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="365.0" YCoordinate="3336.0"/>
+                            <Coordinates XCoordinate="379.0" YCoordinate="3336.0"/>
+                            <Coordinates XCoordinate="658.0" YCoordinate="3336.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-356" Id="_10-509" Name="Unable to provide 1st level solution" To="_10-458">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="345.0" YCoordinate="3357.0"/>
+                            <Coordinates XCoordinate="345.0" YCoordinate="3432.0"/>
+                            <Coordinates XCoordinate="445.0" YCoordinate="3432.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-380" Id="_10-591" Name="" To="_10-577">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="741.0" YCoordinate="3336.0"/>
+                            <Coordinates XCoordinate="755.0" YCoordinate="3336.0"/>
+                            <Coordinates XCoordinate="954.0" YCoordinate="3336.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-458" Id="_10-740" Name="" To="_10-723">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="528.0" YCoordinate="3432.0"/>
+                            <Coordinates XCoordinate="542.0" YCoordinate="3432.0"/>
+                            <Coordinates XCoordinate="683.0" YCoordinate="3432.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-723" Id="_10-744" Name="" To="_10-380">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="699.0" YCoordinate="3416.0"/>
+                            <Coordinates XCoordinate="699.0" YCoordinate="3402.0"/>
+                            <Coordinates XCoordinate="699.0" YCoordinate="3370.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+            </Transitions>
+        </WorkflowProcess>
+        <WorkflowProcess Id="WFP-10-2">
+            <ProcessHeader/>
+            <Activities>
+                <Activity CompletionQuantity="1" Id="_10-617" IsForCompensation="false" Name="Provide solution to 1st level support" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskManual/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" PageId="10" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                            <Coordinates XCoordinate="658.0" YCoordinate="3604.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_10-670" IsForCompensation="false" Name="Request supplier support" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskManual/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" PageId="10" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                            <Coordinates XCoordinate="445.0" YCoordinate="3700.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_10-593" Name="">
+                    <Route ExclusiveType="Data" GatewayDirection="Unspecified" GatewayType="Exclusive" MarkerVisible="true"/>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="42.0" PageId="10" Shape="Gateway" ToolId="Trisotech.Visio" Width="42.0">
+                            <Coordinates XCoordinate="324.0" YCoordinate="3617.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_10-760" Name="Solution received from supplier">
+                    <Event>
+                        <IntermediateEvent Trigger="Message">
+                            <TriggerResultMessage CatchThrow="CATCH">
+                                <Message Id="1356636036317"/>
+                            </TriggerResultMessage>
+                        </IntermediateEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="32.0" PageId="10" Shape="Intermediate Event" ToolId="Trisotech.Visio" Width="32.0">
+                            <Coordinates XCoordinate="683.0" YCoordinate="3718.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_10-746" Name="Issue handled by  2 nd level support">
+                    <Event>
+                        <EndEvent Result="None"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="32.0" PageId="10" Shape="End Event" ToolId="Trisotech.Visio" Width="32.0">
+                            <Coordinates XCoordinate="954.0" YCoordinate="3622.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_10-511" Name="2nd  level Issue">
+                    <Event>
+                        <StartEvent Trigger="Message">
+                            <TriggerResultMessage>
+                                <Message Id="1356636036320"/>
+                            </TriggerResultMessage>
+                        </StartEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="30.0" PageId="10" Shape="Start Event" ToolId="Trisotech.Visio" Width="30.0">
+                            <Coordinates XCoordinate="150.0" YCoordinate="3623.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_10-526" IsForCompensation="false" Name="Find solution 2nd level issue" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskManual/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" PageId="10" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                            <Coordinates XCoordinate="208.0" YCoordinate="3604.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="_10-526" Id="_10-615" Name="" To="_10-593">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="291.0" YCoordinate="3638.0"/>
+                            <Coordinates XCoordinate="305.0" YCoordinate="3638.0"/>
+                            <Coordinates XCoordinate="324.0" YCoordinate="3638.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-593" Id="_10-668" Name="Able to provide  2nd level solution" To="_10-617">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="365.0" YCoordinate="3638.0"/>
+                            <Coordinates XCoordinate="379.0" YCoordinate="3638.0"/>
+                            <Coordinates XCoordinate="658.0" YCoordinate="3638.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-593" Id="_10-721" Name="Unable to provide 2nd level solution" To="_10-670">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="345.0" YCoordinate="3659.0"/>
+                            <Coordinates XCoordinate="345.0" YCoordinate="3735.0"/>
+                            <Coordinates XCoordinate="445.0" YCoordinate="3734.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-670" Id="_10-777" Name="" To="_10-760">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="528.0" YCoordinate="3734.0"/>
+                            <Coordinates XCoordinate="542.0" YCoordinate="3734.0"/>
+                            <Coordinates XCoordinate="683.0" YCoordinate="3734.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-760" Id="_10-779" Name="" To="_10-617">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="699.0" YCoordinate="3718.0"/>
+                            <Coordinates XCoordinate="699.0" YCoordinate="3704.0"/>
+                            <Coordinates XCoordinate="699.0" YCoordinate="3672.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-511" Id="_10-975" Name="" To="_10-526">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="180.0" YCoordinate="3638.0"/>
+                            <Coordinates XCoordinate="194.0" YCoordinate="3638.0"/>
+                            <Coordinates XCoordinate="208.0" YCoordinate="3638.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-617" Id="_10-977" Name="" To="_10-746">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="741.0" YCoordinate="3638.0"/>
+                            <Coordinates XCoordinate="755.0" YCoordinate="3638.0"/>
+                            <Coordinates XCoordinate="954.0" YCoordinate="3638.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+            </Transitions>
+        </WorkflowProcess>
+        <WorkflowProcess Id="WFP-10-4">
+            <ProcessHeader/>
+            <Activities>
+                <Activity CompletionQuantity="1" Id="_10-235" IsForCompensation="false" Name="Request 1st level support" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskManual/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo FillColor="165;165;165" Height="68.0" PageId="10" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                            <Coordinates XCoordinate="564.0" YCoordinate="3068.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_10-138" IsForCompensation="false" Name="Provide solution to customer" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskManual/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo FillColor="165;165;165" Height="68.0" PageId="10" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                            <Coordinates XCoordinate="658.0" YCoordinate="2898.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_10-219" Name="Customer issue resolved">
+                    <Event>
+                        <EndEvent Result="None"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="32.0" PageId="10" Shape="End Event" ToolId="Trisotech.Visio" Width="32.0">
+                            <Coordinates XCoordinate="954.0" YCoordinate="2916.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_10-42" Name="Customer issue report">
+                    <Event>
+                        <StartEvent Trigger="Message">
+                            <TriggerResultMessage>
+                                <Message Id="1356636036285"/>
+                            </TriggerResultMessage>
+                        </StartEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="30.0" PageId="10" Shape="Start Event" ToolId="Trisotech.Visio" Width="30.0">
+                            <Coordinates XCoordinate="150.0" YCoordinate="3087.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_10-195" Name="">
+                    <Route ExclusiveType="Data" GatewayDirection="Unspecified" GatewayType="Exclusive" MarkerVisible="true"/>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="42.0" PageId="10" Shape="Gateway" ToolId="Trisotech.Visio" Width="42.0">
+                            <Coordinates XCoordinate="801.0" YCoordinate="2911.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_10-433" Name="Solution received from 1st level of support">
+                    <Event>
+                        <IntermediateEvent Trigger="Message">
+                            <TriggerResultMessage CatchThrow="CATCH">
+                                <Message Id="1356636036288"/>
+                            </TriggerResultMessage>
+                        </IntermediateEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="32.0" PageId="10" Shape="Intermediate Event" ToolId="Trisotech.Visio" Width="32.0">
+                            <Coordinates XCoordinate="683.0" YCoordinate="3086.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_10-57" IsForCompensation="false" Name="Get issue description from customer" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskManual/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo FillColor="165;165;165" Height="68.0" PageId="10" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                            <Coordinates XCoordinate="216.0" YCoordinate="3068.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_10-920" IsForCompensation="false" Name="Inform customer the issue is going to be escalated" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskManual/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo FillColor="165;165;165" Height="68.0" PageId="10" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                            <Coordinates XCoordinate="445.0" YCoordinate="3068.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_10-114" Name="">
+                    <Route ExclusiveType="Data" GatewayDirection="Unspecified" GatewayType="Exclusive" MarkerVisible="true"/>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="42.0" PageId="10" Shape="Gateway" ToolId="Trisotech.Visio" Width="42.0">
+                            <Coordinates XCoordinate="324.0" YCoordinate="3081.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="_10-42" Id="_10-108" Name="" To="_10-57">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="180.0" YCoordinate="3102.0"/>
+                            <Coordinates XCoordinate="194.0" YCoordinate="3102.0"/>
+                            <Coordinates XCoordinate="216.0" YCoordinate="3102.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-57" Id="_10-136" Name="" To="_10-114">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="299.0" YCoordinate="3102.0"/>
+                            <Coordinates XCoordinate="313.0" YCoordinate="3102.0"/>
+                            <Coordinates XCoordinate="324.0" YCoordinate="3102.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-114" Id="_10-189" Name="Able to  provide solution" To="_10-138">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="345.0" YCoordinate="3081.0"/>
+                            <Coordinates XCoordinate="345.0" YCoordinate="2932.0"/>
+                            <Coordinates XCoordinate="483.0" YCoordinate="2932.0"/>
+                            <Coordinates XCoordinate="658.0" YCoordinate="2932.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-138" Id="_10-217" Name="" To="_10-195">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="741.0" YCoordinate="2932.0"/>
+                            <Coordinates XCoordinate="755.0" YCoordinate="2932.0"/>
+                            <Coordinates XCoordinate="801.0" YCoordinate="2932.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-195" Id="_10-233" Name="Solution is effective" To="_10-219">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="842.0" YCoordinate="2932.0"/>
+                            <Coordinates XCoordinate="954.0" YCoordinate="2932.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-114" Id="_10-286" Name="Unable to  provide solution" To="_10-920">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="365.0" YCoordinate="3102.0"/>
+                            <Coordinates XCoordinate="379.0" YCoordinate="3102.0"/>
+                            <Coordinates XCoordinate="445.0" YCoordinate="3102.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-235" Id="_10-450" Name="" To="_10-433">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="647.0" YCoordinate="3102.0"/>
+                            <Coordinates XCoordinate="661.0" YCoordinate="3102.0"/>
+                            <Coordinates XCoordinate="683.0" YCoordinate="3102.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-433" Id="_10-454" Name="" To="_10-138">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="699.0" YCoordinate="3086.0"/>
+                            <Coordinates XCoordinate="699.0" YCoordinate="3072.0"/>
+                            <Coordinates XCoordinate="699.0" YCoordinate="2966.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-195" Id="_10-456" Name="Solution is not effective" To="_10-57">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="821.0" YCoordinate="2953.0"/>
+                            <Coordinates XCoordinate="821.0" YCoordinate="3180.0"/>
+                            <Coordinates XCoordinate="702.0" YCoordinate="3180.0"/>
+                            <Coordinates XCoordinate="608.0" YCoordinate="3180.0"/>
+                            <Coordinates XCoordinate="257.0" YCoordinate="3180.0"/>
+                            <Coordinates XCoordinate="257.0" YCoordinate="3136.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-920" Id="_10-971" Name="" To="_10-235">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="528.0" YCoordinate="3102.0"/>
+                            <Coordinates XCoordinate="564.0" YCoordinate="3102.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+            </Transitions>
+        </WorkflowProcess>
+        <WorkflowProcess Id="WFP-10-5">
+            <ProcessHeader/>
+            <Activities>
+                <Activity Id="_10-902" Name="Issue handled by supplier">
+                    <Event>
+                        <EndEvent Result="None"/>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="32.0" PageId="10" Shape="End Event" ToolId="Trisotech.Visio" Width="32.0">
+                            <Coordinates XCoordinate="954.0" YCoordinate="3920.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_10-847" IsForCompensation="false" Name="Provide solution to 2nd level support" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskManual/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" PageId="10" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                            <Coordinates XCoordinate="658.0" YCoordinate="3902.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity Id="_10-781" Name="Supplier Issue">
+                    <Event>
+                        <StartEvent Trigger="Message">
+                            <TriggerResultMessage>
+                                <Message Id="1356636036330"/>
+                            </TriggerResultMessage>
+                        </StartEvent>
+                    </Event>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="30.0" PageId="10" Shape="Start Event" ToolId="Trisotech.Visio" Width="30.0">
+                            <Coordinates XCoordinate="153.0" YCoordinate="3921.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+                <Activity CompletionQuantity="1" Id="_10-794" IsForCompensation="false" Name="Find solution supplier issue" StartQuantity="1">
+                    <Implementation>
+                        <Task>
+                            <TaskManual/>
+                        </Task>
+                    </Implementation>
+                    <NodeGraphicsInfos>
+                        <NodeGraphicsInfo Height="68.0" PageId="10" Shape="Task" ToolId="Trisotech.Visio" Width="83.0">
+                            <Coordinates XCoordinate="351.0" YCoordinate="3902.0"/>
+                        </NodeGraphicsInfo>
+                    </NodeGraphicsInfos>
+                </Activity>
+            </Activities>
+            <Transitions>
+                <Transition From="_10-781" Id="_10-845" Name="" To="_10-794">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="183.0" YCoordinate="3936.0"/>
+                            <Coordinates XCoordinate="197.0" YCoordinate="3936.0"/>
+                            <Coordinates XCoordinate="351.0" YCoordinate="3936.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-794" Id="_10-898" Name="" To="_10-847">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="434.0" YCoordinate="3936.0"/>
+                            <Coordinates XCoordinate="658.0" YCoordinate="3936.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+                <Transition From="_10-847" Id="_10-916" Name="" To="_10-902">
+                    <ConnectorGraphicsInfos>
+                        <ConnectorGraphicsInfo BorderColor="0;0;0" PageId="10" ToolId="Trisotech.Visio">
+                            <Coordinates XCoordinate="741.0" YCoordinate="3936.0"/>
+                            <Coordinates XCoordinate="755.0" YCoordinate="3936.0"/>
+                            <Coordinates XCoordinate="954.0" YCoordinate="3936.0"/>
+                        </ConnectorGraphicsInfo>
+                    </ConnectorGraphicsInfos>
+                </Transition>
+            </Transitions>
+        </WorkflowProcess>
+    </WorkflowProcesses>
+    <bpsim:BPSimData xmlns:bpsim="http://www.bpsim.org/schemas/1.0">
+                
+        <bpsim:Scenario id="S1" name="1 - Control perspective">
+            <bpsim:ScenarioParameters replication="3" baseTimeUnit="min">
+                <bpsim:Duration>
+                    <bpsim:DurationParameter value="P1M"/>
+                </bpsim:Duration>
+            </bpsim:ScenarioParameters>
+            
+            <bpsim:ElementParameters elementRef="WFP-10-1">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:ResultRequest>min</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>max</bpsim:ResultRequest>
+                        <bpsim:ResultRequest>mean</bpsim:ResultRequest>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            
+            <bpsim:ElementParameters elementRef="_10-42">
+                <bpsim:ControlParameters>
+                    <bpsim:InterTriggerTimer>
+                        <bpsim:TriangularDistribution min="0.35" max="2" mode="2"/>
+                    </bpsim:InterTriggerTimer>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-781">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-511">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-288">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+        </bpsim:Scenario>
+        <bpsim:Scenario id="S2" name="2 - Temporal perspective" inherits="S1">
+            
+            <bpsim:ElementParameters elementRef="_10-57">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution mean="4" standardDeviation="0.5" min="0"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-920">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution mean="1" standardDeviation="0.5" min="0"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-235">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:DurationParameter value="PT30S"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-138">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution mean="10" standardDeviation="2.5" min="0"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-303">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution mean="4" standardDeviation="0.5" min="0"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-458">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:DurationParameter value="PT30S"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-380">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution mean="1" standardDeviation="0.5" min="0"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-526">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution mean="7" standardDeviation="0.5" min="0"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-670">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution mean="3" standardDeviation="0.5" min="0"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-617">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution mean="1" standardDeviation="0.5" min="0"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-794">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution mean="300" standardDeviation="30" min="0"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-847">
+                <bpsim:TimeParameters>
+                    <bpsim:ProcessingTime>
+                        <bpsim:TruncatedNormalDistribution mean="2" standardDeviation="0.5" min="0"/>
+                    </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-189">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="60"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-286">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="40"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-233">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="15"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-456">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="85"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-431">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="70"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-509">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="30"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-668">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="80"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-721">
+                <bpsim:ControlParameters>
+                    <bpsim:Probability>
+                        <bpsim:FloatingParameter value="20"/>
+                    </bpsim:Probability>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-42">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-219">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-577">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-746">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-902">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-781">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-511">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-288">
+                <bpsim:ControlParameters>
+                    <bpsim:TriggerCount>
+                        <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                    </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+            </bpsim:ElementParameters>
+        </bpsim:Scenario>
+        <bpsim:Scenario id="S3" name="3 - Resource perspective" inherits="S1">
+            <bpsim:ElementParameters elementRef="frontOffice">
+                <bpsim:TimeParameters>
+                  <bpsim:WaitTime>
+                    <bpsim:ResultRequest>sum</bpsim:ResultRequest>
+                  </bpsim:WaitTime>
+                  <bpsim:ProcessingTime>
+                    <bpsim:ResultRequest>sum</bpsim:ResultRequest>
+                  </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+                <bpsim:ControlParameters>
+                  <bpsim:TriggerCount>
+                    <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                  </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+                <bpsim:ResourceParameters>
+                  <bpsim:Quantity>
+                    <bpsim:NumericParameter value="200" validFor="shift-6-9am"/>
+                    <bpsim:NumericParameter value="90" validFor="shift-9-noon"/>
+                    <bpsim:NumericParameter value="130" validFor="shift-noon-3pm"/>
+                    <bpsim:NumericParameter value="60" validFor="shift-3-6pm"/>
+                    <bpsim:NumericParameter value="150" validFor="shift-6-10pm"/>
+                    <bpsim:NumericParameter value="100" validFor="shift-10-1am"/>
+                    <bpsim:NumericParameter value="40" validFor="shift-1-6am"/>
+                  </bpsim:Quantity>
+                </bpsim:ResourceParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="firstLevelSupport">
+                <bpsim:TimeParameters>
+                  <bpsim:WaitTime>
+                    <bpsim:ResultRequest>sum</bpsim:ResultRequest>
+                  </bpsim:WaitTime>
+                  <bpsim:ProcessingTime>
+                    <bpsim:ResultRequest>sum</bpsim:ResultRequest>
+                  </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+                <bpsim:ControlParameters>
+                  <bpsim:TriggerCount>
+                    <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                  </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+                <bpsim:ResourceParameters>
+                  <bpsim:Quantity>
+                    <bpsim:NumericParameter value="3" validFor="shift-6-9am"/>
+                    <bpsim:NumericParameter value="3" validFor="shift-9-noon"/>
+                    <bpsim:NumericParameter value="3" validFor="shift-noon-3pm"/>
+                    <bpsim:NumericParameter value="3" validFor="shift-3-6pm"/>
+                    <bpsim:NumericParameter value="3" validFor="shift-6-10pm"/>
+                    <bpsim:NumericParameter value="3" validFor="shift-10-1am"/>
+                  </bpsim:Quantity>
+                </bpsim:ResourceParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="secondLevelSupport">
+                <bpsim:TimeParameters>
+                  <bpsim:WaitTime>
+                    <bpsim:ResultRequest>sum</bpsim:ResultRequest>
+                  </bpsim:WaitTime>
+                  <bpsim:ProcessingTime>
+                    <bpsim:ResultRequest>sum</bpsim:ResultRequest>
+                  </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+                <bpsim:ControlParameters>
+                  <bpsim:TriggerCount>
+                    <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                  </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+                <bpsim:ResourceParameters>
+                  <bpsim:Quantity>
+                    <bpsim:NumericParameter value="2" validFor="shift-6-9am"/>
+                    <bpsim:NumericParameter value="2" validFor="shift-9-noon"/>
+                    <bpsim:NumericParameter value="2" validFor="shift-noon-3pm"/>
+                    <bpsim:NumericParameter value="2" validFor="shift-3-6pm"/>
+                    <bpsim:NumericParameter value="2" validFor="shift-6-10pm"/>
+                    <bpsim:NumericParameter value="2" validFor="shift-10-1am"/>
+                  </bpsim:Quantity>
+                </bpsim:ResourceParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="supplier">
+                <bpsim:TimeParameters>
+                  <bpsim:WaitTime>
+                    <bpsim:ResultRequest>sum</bpsim:ResultRequest>
+                  </bpsim:WaitTime>
+                  <bpsim:ProcessingTime>
+                    <bpsim:ResultRequest>sum</bpsim:ResultRequest>
+                  </bpsim:ProcessingTime>
+                </bpsim:TimeParameters>
+                <bpsim:ControlParameters>
+                  <bpsim:TriggerCount>
+                    <bpsim:ResultRequest>count</bpsim:ResultRequest>
+                  </bpsim:TriggerCount>
+                </bpsim:ControlParameters>
+                <bpsim:ResourceParameters>
+                  <bpsim:Quantity>
+                    <bpsim:NumericParameter value="1" validFor="shift-9am-10pm-weekdays" />
+                  </bpsim:Quantity>
+                </bpsim:ResourceParameters>
+            </bpsim:ElementParameters>
+            
+            <bpsim:ElementParameters elementRef="_10-57">
+                <bpsim:ResourceParameters>
+                  <bpsim:Selection>
+                    <bpsim:ExpressionParameter value="getResource('frontOffice', 1)" />
+                  </bpsim:Selection>
+                </bpsim:ResourceParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-138">
+                <bpsim:ResourceParameters>
+                  <bpsim:Selection>
+                    <bpsim:ExpressionParameter value="getResource('frontOffice', 1)" />
+                  </bpsim:Selection>
+                </bpsim:ResourceParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-235">
+                <bpsim:ResourceParameters>
+                  <bpsim:Selection>
+                    <bpsim:ExpressionParameter value="getResource('frontOffice', 1)" />
+                  </bpsim:Selection>
+                </bpsim:ResourceParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-920">
+                <bpsim:ResourceParameters>
+                  <bpsim:Selection>
+                    <bpsim:ExpressionParameter value="getResource('frontOffice', 1)" />
+                  </bpsim:Selection>
+                </bpsim:ResourceParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-303">
+                <bpsim:ResourceParameters>
+                  <bpsim:Selection>
+                    <bpsim:ExpressionParameter value="getResource('firstLevelSupport', 1)" />
+                  </bpsim:Selection>
+                </bpsim:ResourceParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-380">
+                <bpsim:ResourceParameters>
+                  <bpsim:Selection>
+                    <bpsim:ExpressionParameter value="getResource('firstLevelSupport', 1)" />
+                  </bpsim:Selection>
+                </bpsim:ResourceParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-458">
+                <bpsim:ResourceParameters>
+                  <bpsim:Selection>
+                    <bpsim:ExpressionParameter value="getResource('firstLevelSupport', 1)" />
+                  </bpsim:Selection>
+                </bpsim:ResourceParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-526">
+                <bpsim:ResourceParameters>
+                  <bpsim:Selection>
+                    <bpsim:ExpressionParameter value="getResource('secondLevelSupport', 1)" />
+                  </bpsim:Selection>
+                </bpsim:ResourceParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-617">
+                <bpsim:ResourceParameters>
+                  <bpsim:Selection>
+                    <bpsim:ExpressionParameter value="getResource('secondLevelSupport', 1)" />
+                  </bpsim:Selection>
+                </bpsim:ResourceParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-670">
+                <bpsim:ResourceParameters>
+                  <bpsim:Selection>
+                    <bpsim:ExpressionParameter value="getResource('secondLevelSupport', 1)" />
+                  </bpsim:Selection>
+                </bpsim:ResourceParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-794">
+                <bpsim:ResourceParameters>
+                  <bpsim:Selection>
+                    <bpsim:ExpressionParameter value="getResource('supplier', 1)" />
+                  </bpsim:Selection>
+                </bpsim:ResourceParameters>
+            </bpsim:ElementParameters>
+            <bpsim:ElementParameters elementRef="_10-847">
+                <bpsim:ResourceParameters>
+                  <bpsim:Selection>
+                    <bpsim:ExpressionParameter value="getResource('supplier', 1)" />
+                  </bpsim:Selection>
+                </bpsim:ResourceParameters>
+            </bpsim:ElementParameters>
+            
+            <bpsim:Calendar id="C1" name="shift-6-9am">BEGIN:VCALENDAR
+BEGIN:VEVENT
+DTSTAMP:20121220T202424
+UID:1356035064823@localhost
+DTSTART:20121220T060000
+DTEND:20121220T090000
+RRULE:FREQ=DAILY
+END:VEVENT
+PRODID:PAF Editor
+VERSION:2.0
+END:VCALENDAR</bpsim:Calendar>
+             <bpsim:Calendar id="C2" name="shift-9-noon">BEGIN:VCALENDAR
+BEGIN:VEVENT
+DTSTAMP:20121220T202500
+UID:1356035100473@localhost
+DTSTART:20121220T090000
+DTEND:20121220T120000
+RRULE:FREQ=DAILY
+END:VEVENT
+PRODID:PAF Editor
+VERSION:2.0
+END:VCALENDAR</bpsim:Calendar>
+             <bpsim:Calendar id="C3" name="shift-noon-3pm">BEGIN:VCALENDAR
+BEGIN:VEVENT
+DTSTAMP:20121220T202529
+UID:1356035129707@localhost
+DTSTART:20121220T120000
+DTEND:20121220T150000
+RRULE:FREQ=DAILY
+END:VEVENT
+PRODID:PAF Editor
+VERSION:2.0
+END:VCALENDAR</bpsim:Calendar>
+             <bpsim:Calendar id="C4" name="shift-3-6pm">BEGIN:VCALENDAR
+BEGIN:VEVENT
+DTSTAMP:20121220T202631
+UID:1356035191095@localhost
+DTSTART:20121220T150000
+DTEND:20121220T180000
+RRULE:FREQ=DAILY
+END:VEVENT
+PRODID:PAF Editor
+VERSION:2.0
+END:VCALENDAR</bpsim:Calendar>
+             <bpsim:Calendar id="C5" name="shift-6-10pm">BEGIN:VCALENDAR
+BEGIN:VEVENT
+DTSTAMP:20121220T202706
+UID:1356035226921@localhost
+DTSTART:20121220T180000
+DTEND:20121220T220000
+RRULE:FREQ=DAILY
+END:VEVENT
+PRODID:PAF Editor
+VERSION:2.0
+END:VCALENDAR</bpsim:Calendar>
+             <bpsim:Calendar id="C6" name="shift-10-1am">BEGIN:VCALENDAR
+BEGIN:VEVENT
+DTSTAMP:20121220T202726
+UID:1356035246845@localhost
+DTSTART:20121220T100000
+DTEND:20121221T010000
+RRULE:FREQ=DAILY
+END:VEVENT
+PRODID:PAF Editor
+VERSION:2.0
+END:VCALENDAR</bpsim:Calendar>
+             <bpsim:Calendar id="C7" name="shift-1-6am">BEGIN:VCALENDAR
+BEGIN:VEVENT
+DTSTAMP:20121220T202752
+UID:1356035272706@localhost
+DTSTART:20121220T010000
+DTEND:20121220T060000
+RRULE:FREQ=DAILY
+END:VEVENT
+PRODID:PAF Editor
+VERSION:2.0
+END:VCALENDAR</bpsim:Calendar>
+             <bpsim:Calendar id="C8" name="shift-9am-10pm-weekdays">BEGIN:VCALENDAR
+BEGIN:VEVENT
+DTSTAMP:20121220T203015
+UID:1356035303891@localhost
+DTSTART:20121220T090000
+DTEND:20121220T220000
+RRULE:FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR
+END:VEVENT
+PRODID:PAF Editor
+VERSION:2.0
+END:VCALENDAR</bpsim:Calendar>
+          </bpsim:Scenario>
+      </bpsim:BPSimData>
+</Package>
