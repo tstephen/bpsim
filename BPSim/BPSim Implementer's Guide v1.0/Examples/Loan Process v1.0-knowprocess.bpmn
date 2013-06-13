@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<semantic:definitions xmlns:semantic="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:tns="http://www.trisotech.com/definitions/_1364754643385" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:yaoqiang="http://bpmn.sourceforge.net" exporter="Yaoqiang BPMN Editor" exporterVersion="2.1.34" expressionLanguage="http://www.w3.org/1999/XPath" id="_1364754643385" name="Loan Process v0.20" targetNamespace="http://www.trisotech.com/definitions/_1364754643385" typeLanguage="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL http://bpmn.sourceforge.net/schemas/BPMN20.xsd">
+  <semantic:message id="_1364754643401"/>
+  <semantic:message id="_1364754643403"/>
+  <semantic:message id="_1364754643417"/>
+  <semantic:message id="_1364754643422"/>
+  <semantic:message id="_1364754643428"/>
+  <semantic:process id="_6" isClosed="false" isExecutable="false" processType="None">
+    <semantic:laneSet id="ls_1364754643532">
+      <semantic:lane id="_81354509-EC39-44E5-A266-4286CBB1EFAC" name="Loan officer">
+        <semantic:flowNodeRef>_4E504F9B-2618-424F-ABAA-C4D4CC2D75E0</semantic:flowNodeRef>
+        <semantic:flowNodeRef>_0CA1F609-5DFA-43E2-96DE-6CBD97BFAC5A</semantic:flowNodeRef>
+        <semantic:flowNodeRef>_C94EFA57-E605-4564-BFC4-22A84C660A6A</semantic:flowNodeRef>
+        <semantic:flowNodeRef>_D94158CC-F5C2-46A2-96A2-CD8B02AF14B4</semantic:flowNodeRef>
+        <semantic:flowNodeRef>_DA142784-0125-46E0-A3CA-004302BD5E21</semantic:flowNodeRef>
+        <semantic:flowNodeRef>_A2A06973-DC30-4BCF-BF0F-1FD60D68E1EB</semantic:flowNodeRef>
+        <semantic:flowNodeRef>_63474DBF-E8E4-4C29-AD38-E46DE50EE080</semantic:flowNodeRef>
+        <semantic:flowNodeRef>_6E1A332C-9187-4C4A-BD0F-27167F940786</semantic:flowNodeRef>
+        <semantic:flowNodeRef>_2017EC19-4BD5-40D7-9014-E7D337A68E01</semantic:flowNodeRef>
+        <semantic:flowNodeRef>_65F6E8B9-FDD3-4770-B12B-87862F37BDF6</semantic:flowNodeRef>
+        <semantic:flowNodeRef>_D6383F72-7F7A-48F8-A742-A26F36A8DC10</semantic:flowNodeRef>
+        <semantic:flowNodeRef>_F366069F-C180-4D69-B2BF-4124649EC36F</semantic:flowNodeRef>
+        <semantic:flowNodeRef>_C77E51FD-9C1B-40F7-9273-100E47069B11</semantic:flowNodeRef>
+        <semantic:flowNodeRef>_5</semantic:flowNodeRef>
+      </semantic:lane>
+      <semantic:lane id="_B634801B-C2C5-4C55-A4AD-17882B1E87F2" name="Title Researcher">
+        <semantic:flowNodeRef>_4A0E10F8-6AC7-4AF0-AFD3-5E0CB00BD316</semantic:flowNodeRef>
+        <semantic:flowNodeRef>_ACDC390F-49FD-43A3-ACD6-1EBB8074801D</semantic:flowNodeRef>
+      </semantic:lane>
+      <semantic:lane id="_357D85DD-EB4D-4D21-AAD7-D9895DA1633B" name="Loan Underwriter">
+        <semantic:flowNodeRef>_3330ACC4-BCD9-422A-ADCD-7DDF06A2042D</semantic:flowNodeRef>
+        <semantic:flowNodeRef>_32AE6A44-B449-40FE-9055-69819469BF98</semantic:flowNodeRef>
+        <semantic:flowNodeRef>_57EE71B2-5287-46A2-9B24-83A68131714C</semantic:flowNodeRef>
+      </semantic:lane>
+    </semantic:laneSet>
+    <semantic:dataObject id="DF1364754643533" isCollection="false"/>
+    <semantic:startEvent id="_4E504F9B-2618-424F-ABAA-C4D4CC2D75E0" isInterrupting="true" name="Receive  Loan  Application" parallelMultiple="false">
+      <semantic:outgoing>_72A5DDBE-554D-4014-BE8C-FB2E7642F4C3</semantic:outgoing>
+      <semantic:dataOutput id="Dout1364754643587" isCollection="false"/>
+      <semantic:dataOutputAssociation id="_5D0B2CCB-8CD7-4D85-B56B-2095BDBF6240">
+        <semantic:sourceRef>Dout1364754643587</semantic:sourceRef>
+        <semantic:targetRef>_F36BDDC0-AD29-47B6-8102-9BF334EFB012</semantic:targetRef>
+      </semantic:dataOutputAssociation>
+      <semantic:outputSet>
+        <semantic:dataOutputRefs>Dout1364754643587</semantic:dataOutputRefs>
+      </semantic:outputSet>
+      <semantic:messageEventDefinition id="_4E504F9B-2618-424F-ABAA-C4D4CC2D75E0_ED_1" messageRef="_1364754643401"/>
+    </semantic:startEvent>
+    <semantic:userTask completionQuantity="1" id="_0CA1F609-5DFA-43E2-96DE-6CBD97BFAC5A" implementation="##WebService" isForCompensation="false" name="Verify Employment" startQuantity="1">
+      <semantic:incoming>_4300C232-1B1B-4D7D-9056-A153E31A2A5E</semantic:incoming>
+      <semantic:outgoing>_8663B922-4BE9-4192-8BC8-0578B127A8F1</semantic:outgoing>
+      <semantic:potentialOwner id="_0CA1F609-5DFA-43E2-96DE-6CBD97BFAC5A_RES_1" name="LoanOfficer">
+        <semantic:resourceAssignmentExpression>
+          <semantic:formalExpression><![CDATA[LoanOfficer]]></semantic:formalExpression>
+        </semantic:resourceAssignmentExpression>
+      </semantic:potentialOwner>
+    </semantic:userTask>
+    <semantic:userTask completionQuantity="1" id="_C94EFA57-E605-4564-BFC4-22A84C660A6A" implementation="##WebService" isForCompensation="false" name="Review Loan Application" startQuantity="1">
+      <semantic:incoming>_B9562572-75E4-4143-BC81-4D79CEDB65D6</semantic:incoming>
+      <semantic:outgoing>_A80D6FF4-D222-4AAF-9161-8FB83F91AEED</semantic:outgoing>
+      <semantic:potentialOwner id="_C94EFA57-E605-4564-BFC4-22A84C660A6A_RES_1" name="LoanOfficer">
+        <semantic:resourceAssignmentExpression>
+          <semantic:formalExpression><![CDATA[LoanOfficer]]></semantic:formalExpression>
+        </semantic:resourceAssignmentExpression>
+      </semantic:potentialOwner>
+    </semantic:userTask>
+    <semantic:parallelGateway gatewayDirection="Unspecified" id="_D94158CC-F5C2-46A2-96A2-CD8B02AF14B4">
+      <semantic:incoming>_0E7BF85E-0000-43F9-B735-3BF726227B81</semantic:incoming>
+      <semantic:outgoing>_4300C232-1B1B-4D7D-9056-A153E31A2A5E</semantic:outgoing>
+      <semantic:outgoing>_880E2204-2897-40BA-9C2F-B81F9580EF75</semantic:outgoing>
+      <semantic:outgoing>_2</semantic:outgoing>
+    </semantic:parallelGateway>
+    <semantic:sendTask completionQuantity="1" id="_DA142784-0125-46E0-A3CA-004302BD5E21" implementation="##WebService" isForCompensation="false" messageRef="_1364754643417" name="Send Approval Letter" startQuantity="1">
+      <semantic:incoming>_3D6F2455-BFFB-44BB-A052-892FB15FEEB4</semantic:incoming>
+      <semantic:outgoing>_906AE477-1AA9-443C-AFFD-C0F2AAE20D83</semantic:outgoing>
+    </semantic:sendTask>
+    <semantic:endEvent id="_A2A06973-DC30-4BCF-BF0F-1FD60D68E1EB" name="Loan Request Rejected">
+      <semantic:incoming>_0AEB1821-0E16-4CC8-BC7C-9AF71C35F88F</semantic:incoming>
+    </semantic:endEvent>
+    <semantic:exclusiveGateway default="_3D6F2455-BFFB-44BB-A052-892FB15FEEB4" gatewayDirection="Unspecified" id="_63474DBF-E8E4-4C29-AD38-E46DE50EE080" name="Approved?">
+      <semantic:incoming>_A80D6FF4-D222-4AAF-9161-8FB83F91AEED</semantic:incoming>
+      <semantic:outgoing>_93351D59-990B-46B0-80AB-FEEF088E9D7B</semantic:outgoing>
+      <semantic:outgoing>_3D6F2455-BFFB-44BB-A052-892FB15FEEB4</semantic:outgoing>
+    </semantic:exclusiveGateway>
+    <semantic:endEvent id="_6E1A332C-9187-4C4A-BD0F-27167F940786" name="Loan Request Approved">
+      <semantic:incoming>_DEAA6495-03EC-479A-BAED-836083B9B19F</semantic:incoming>
+    </semantic:endEvent>
+    <semantic:userTask completionQuantity="1" id="_2017EC19-4BD5-40D7-9014-E7D337A68E01" implementation="##WebService" isForCompensation="false" name="Record Loan Application" startQuantity="1">
+      <semantic:incoming>_72A5DDBE-554D-4014-BE8C-FB2E7642F4C3</semantic:incoming>
+      <semantic:outgoing>_0E7BF85E-0000-43F9-B735-3BF726227B81</semantic:outgoing>
+      <semantic:ioSpecification>
+        <semantic:dataInput id="Din1364754643584" isCollection="false"/>
+        <semantic:inputSet>
+          <semantic:dataInputRefs>Din1364754643584</semantic:dataInputRefs>
+        </semantic:inputSet>
+        <semantic:outputSet/>
+      </semantic:ioSpecification>
+      <semantic:dataInputAssociation id="_8BF5972D-13A9-4941-A60A-F338F0347B05">
+        <semantic:sourceRef>_F36BDDC0-AD29-47B6-8102-9BF334EFB012</semantic:sourceRef>
+        <semantic:targetRef>Din1364754643584</semantic:targetRef>
+      </semantic:dataInputAssociation>
+      <semantic:potentialOwner id="_2017EC19-4BD5-40D7-9014-E7D337A68E01_RES_1" name="LoanOfficer">
+        <semantic:resourceAssignmentExpression>
+          <semantic:formalExpression><![CDATA[LoanOfficer]]></semantic:formalExpression>
+        </semantic:resourceAssignmentExpression>
+      </semantic:potentialOwner>
+    </semantic:userTask>
+    <semantic:userTask completionQuantity="1" id="_65F6E8B9-FDD3-4770-B12B-87862F37BDF6" implementation="##WebService" isForCompensation="false" name="Close-Out Rejection" startQuantity="1">
+      <semantic:incoming>_07B03EA5-891A-4BF5-8779-1A6912D3B183</semantic:incoming>
+      <semantic:outgoing>_0AEB1821-0E16-4CC8-BC7C-9AF71C35F88F</semantic:outgoing>
+      <semantic:ioSpecification>
+        <semantic:dataOutput id="Dout1364754643585" isCollection="false"/>
+        <semantic:inputSet/>
+        <semantic:outputSet>
+          <semantic:dataOutputRefs>Dout1364754643585</semantic:dataOutputRefs>
+        </semantic:outputSet>
+      </semantic:ioSpecification>
+      <semantic:dataOutputAssociation id="_346DBF5F-09DC-4A36-95E4-5019CA5D6457">
+        <semantic:sourceRef>Dout1364754643585</semantic:sourceRef>
+        <semantic:targetRef>_676BDDAC-A319-426B-96DF-E1F1EEF38EFB</semantic:targetRef>
+      </semantic:dataOutputAssociation>
+      <semantic:potentialOwner id="_65F6E8B9-FDD3-4770-B12B-87862F37BDF6_RES_1" name="LoanOfficer">
+        <semantic:resourceAssignmentExpression>
+          <semantic:formalExpression><![CDATA[LoanOfficer]]></semantic:formalExpression>
+        </semantic:resourceAssignmentExpression>
+      </semantic:potentialOwner>
+    </semantic:userTask>
+    <semantic:sendTask completionQuantity="1" id="_D6383F72-7F7A-48F8-A742-A26F36A8DC10" implementation="##WebService" isForCompensation="false" messageRef="_1364754643428" name="Send Rejection Letter" startQuantity="1">
+      <semantic:incoming>_93351D59-990B-46B0-80AB-FEEF088E9D7B</semantic:incoming>
+      <semantic:outgoing>_07B03EA5-891A-4BF5-8779-1A6912D3B183</semantic:outgoing>
+    </semantic:sendTask>
+    <semantic:userTask completionQuantity="1" id="_F366069F-C180-4D69-B2BF-4124649EC36F" implementation="##WebService" isForCompensation="false" name="Close-out Approval" startQuantity="1">
+      <semantic:incoming>_BCC30BA7-C001-4D9D-B69C-2D99DA0706C5</semantic:incoming>
+      <semantic:outgoing>_DEAA6495-03EC-479A-BAED-836083B9B19F</semantic:outgoing>
+      <semantic:ioSpecification>
+        <semantic:dataOutput id="Dout1364754643586" isCollection="false"/>
+        <semantic:inputSet/>
+        <semantic:outputSet>
+          <semantic:dataOutputRefs>Dout1364754643586</semantic:dataOutputRefs>
+        </semantic:outputSet>
+      </semantic:ioSpecification>
+      <semantic:dataOutputAssociation id="_95613936-EA5E-432B-8F84-5D29E58EA82F">
+        <semantic:sourceRef>Dout1364754643586</semantic:sourceRef>
+        <semantic:targetRef>_A383CA8A-59EA-4E2E-8A40-38363ACF6547</semantic:targetRef>
+      </semantic:dataOutputAssociation>
+      <semantic:potentialOwner id="_F366069F-C180-4D69-B2BF-4124649EC36F_RES_1" name="LoanOfficer">
+        <semantic:resourceAssignmentExpression>
+          <semantic:formalExpression><![CDATA[LoanOfficer]]></semantic:formalExpression>
+        </semantic:resourceAssignmentExpression>
+      </semantic:potentialOwner>
+    </semantic:userTask>
+    <semantic:parallelGateway gatewayDirection="Unspecified" id="_C77E51FD-9C1B-40F7-9273-100E47069B11">
+      <semantic:incoming>_8663B922-4BE9-4192-8BC8-0578B127A8F1</semantic:incoming>
+      <semantic:incoming>_78F951B5-7470-4538-AA6C-CD08E4D422C6</semantic:incoming>
+      <semantic:incoming>_3</semantic:incoming>
+      <semantic:outgoing>_B9562572-75E4-4143-BC81-4D79CEDB65D6</semantic:outgoing>
+    </semantic:parallelGateway>
+    <semantic:manualTask completionQuantity="1" id="_4A0E10F8-6AC7-4AF0-AFD3-5E0CB00BD316" isForCompensation="false" name="Perform Title Search" startQuantity="1">
+      <semantic:incoming>_880E2204-2897-40BA-9C2F-B81F9580EF75</semantic:incoming>
+      <semantic:outgoing>_60D986A6-6530-4D75-9648-AF5AFB1CA9A6</semantic:outgoing>
+      <semantic:performer id="_4A0E10F8-6AC7-4AF0-AFD3-5E0CB00BD316_RES_1" name="TitleResearcher">
+        <semantic:resourceAssignmentExpression>
+          <semantic:formalExpression><![CDATA[TitleResearcher]]></semantic:formalExpression>
+        </semantic:resourceAssignmentExpression>
+      </semantic:performer>
+    </semantic:manualTask>
+    <semantic:userTask completionQuantity="1" id="_ACDC390F-49FD-43A3-ACD6-1EBB8074801D" implementation="##WebService" isForCompensation="false" name="Review Title Report" startQuantity="1">
+      <semantic:incoming>_60D986A6-6530-4D75-9648-AF5AFB1CA9A6</semantic:incoming>
+      <semantic:outgoing>_78F951B5-7470-4538-AA6C-CD08E4D422C6</semantic:outgoing>
+      <semantic:potentialOwner id="_ACDC390F-49FD-43A3-ACD6-1EBB8074801D_RES_1" name="TitleResearcher">
+        <semantic:resourceAssignmentExpression>
+          <semantic:formalExpression><![CDATA[TitleResearcher]]></semantic:formalExpression>
+        </semantic:resourceAssignmentExpression>
+      </semantic:potentialOwner>
+    </semantic:userTask>
+    <semantic:scriptTask completionQuantity="1" id="_3330ACC4-BCD9-422A-ADCD-7DDF06A2042D" isForCompensation="false" name="Set with Default Terms" scriptFormat="text/javascript" startQuantity="1">
+      <semantic:incoming>_F36A03D5-2835-4BEB-9835-612961CB01B0</semantic:incoming>
+      <semantic:outgoing>_81B53174-A333-4892-8A4E-0654D0DC9059</semantic:outgoing>
+      <semantic:script><![CDATA[terms = 'default';]]></semantic:script>
+    </semantic:scriptTask>
+    <semantic:exclusiveGateway gatewayDirection="Unspecified" id="_32AE6A44-B449-40FE-9055-69819469BF98">
+      <semantic:incoming>_F8D6251D-FEDF-40FE-9541-89714A5F81D8</semantic:incoming>
+      <semantic:incoming>_81B53174-A333-4892-8A4E-0654D0DC9059</semantic:incoming>
+      <semantic:outgoing>_BCC30BA7-C001-4D9D-B69C-2D99DA0706C5</semantic:outgoing>
+    </semantic:exclusiveGateway>
+    <semantic:userTask completionQuantity="1" id="_57EE71B2-5287-46A2-9B24-83A68131714C" implementation="##WebService" isForCompensation="false" name="Underwrite Loan with Terms" startQuantity="1">
+      <semantic:incoming>_906AE477-1AA9-443C-AFFD-C0F2AAE20D83</semantic:incoming>
+      <semantic:outgoing>_F8D6251D-FEDF-40FE-9541-89714A5F81D8</semantic:outgoing>
+      <semantic:potentialOwner id="_57EE71B2-5287-46A2-9B24-83A68131714C_RES_1" name="LoanUnderwriter">
+        <semantic:resourceAssignmentExpression>
+          <semantic:formalExpression><![CDATA[LoanUnderwriter]]></semantic:formalExpression>
+        </semantic:resourceAssignmentExpression>
+      </semantic:potentialOwner>
+    </semantic:userTask>
+    <semantic:boundaryEvent attachedToRef="_57EE71B2-5287-46A2-9B24-83A68131714C" cancelActivity="true" id="_542AE8E6-9CEA-43E3-8177-C685A9F430FE" name="1 Hour Time Limit" parallelMultiple="false">
+      <semantic:outgoing>_F36A03D5-2835-4BEB-9835-612961CB01B0</semantic:outgoing>
+      <semantic:timerEventDefinition id="_542AE8E6-9CEA-43E3-8177-C685A9F430FE_ED_1">
+        <semantic:timeDuration><![CDATA[PT60M]]></semantic:timeDuration>
+      </semantic:timerEventDefinition>
+    </semantic:boundaryEvent>
+    <semantic:dataObjectReference dataObjectRef="DF1364754643533" id="_A383CA8A-59EA-4E2E-8A40-38363ACF6547" name="Loan Application">
+      <semantic:dataState name="Approved"/>
+    </semantic:dataObjectReference>
+    <semantic:dataObjectReference dataObjectRef="DF1364754643533" id="_F36BDDC0-AD29-47B6-8102-9BF334EFB012" name="Loan Application">
+      <semantic:dataState name="Initial"/>
+    </semantic:dataObjectReference>
+    <semantic:dataObjectReference dataObjectRef="DF1364754643533" id="_676BDDAC-A319-426B-96DF-E1F1EEF38EFB" name="Loan Application">
+      <semantic:dataState name="Rejected"/>
+    </semantic:dataObjectReference>
+    <semantic:sequenceFlow id="_72A5DDBE-554D-4014-BE8C-FB2E7642F4C3" sourceRef="_4E504F9B-2618-424F-ABAA-C4D4CC2D75E0" targetRef="_2017EC19-4BD5-40D7-9014-E7D337A68E01"/>
+    <semantic:sequenceFlow id="_0E7BF85E-0000-43F9-B735-3BF726227B81" sourceRef="_2017EC19-4BD5-40D7-9014-E7D337A68E01" targetRef="_D94158CC-F5C2-46A2-96A2-CD8B02AF14B4"/>
+    <semantic:sequenceFlow id="_4300C232-1B1B-4D7D-9056-A153E31A2A5E" sourceRef="_D94158CC-F5C2-46A2-96A2-CD8B02AF14B4" targetRef="_0CA1F609-5DFA-43E2-96DE-6CBD97BFAC5A"/>
+    <semantic:sequenceFlow id="_8663B922-4BE9-4192-8BC8-0578B127A8F1" sourceRef="_0CA1F609-5DFA-43E2-96DE-6CBD97BFAC5A" targetRef="_C77E51FD-9C1B-40F7-9273-100E47069B11"/>
+    <semantic:sequenceFlow id="_880E2204-2897-40BA-9C2F-B81F9580EF75" sourceRef="_D94158CC-F5C2-46A2-96A2-CD8B02AF14B4" targetRef="_4A0E10F8-6AC7-4AF0-AFD3-5E0CB00BD316"/>
+    <semantic:sequenceFlow id="_60D986A6-6530-4D75-9648-AF5AFB1CA9A6" sourceRef="_4A0E10F8-6AC7-4AF0-AFD3-5E0CB00BD316" targetRef="_ACDC390F-49FD-43A3-ACD6-1EBB8074801D"/>
+    <semantic:sequenceFlow id="_78F951B5-7470-4538-AA6C-CD08E4D422C6" sourceRef="_ACDC390F-49FD-43A3-ACD6-1EBB8074801D" targetRef="_C77E51FD-9C1B-40F7-9273-100E47069B11"/>
+    <semantic:sequenceFlow id="_B9562572-75E4-4143-BC81-4D79CEDB65D6" sourceRef="_C77E51FD-9C1B-40F7-9273-100E47069B11" targetRef="_C94EFA57-E605-4564-BFC4-22A84C660A6A"/>
+    <semantic:sequenceFlow id="_A80D6FF4-D222-4AAF-9161-8FB83F91AEED" sourceRef="_C94EFA57-E605-4564-BFC4-22A84C660A6A" targetRef="_63474DBF-E8E4-4C29-AD38-E46DE50EE080"/>
+    <semantic:sequenceFlow id="_93351D59-990B-46B0-80AB-FEEF088E9D7B" name="No" sourceRef="_63474DBF-E8E4-4C29-AD38-E46DE50EE080" targetRef="_D6383F72-7F7A-48F8-A742-A26F36A8DC10">
+      <semantic:conditionExpression><![CDATA[${!approved}]]></semantic:conditionExpression>
+    </semantic:sequenceFlow>
+    <semantic:sequenceFlow id="_07B03EA5-891A-4BF5-8779-1A6912D3B183" sourceRef="_D6383F72-7F7A-48F8-A742-A26F36A8DC10" targetRef="_65F6E8B9-FDD3-4770-B12B-87862F37BDF6"/>
+    <semantic:sequenceFlow id="_0AEB1821-0E16-4CC8-BC7C-9AF71C35F88F" sourceRef="_65F6E8B9-FDD3-4770-B12B-87862F37BDF6" targetRef="_A2A06973-DC30-4BCF-BF0F-1FD60D68E1EB"/>
+    <semantic:sequenceFlow id="_3D6F2455-BFFB-44BB-A052-892FB15FEEB4" name="Yes" sourceRef="_63474DBF-E8E4-4C29-AD38-E46DE50EE080" targetRef="_DA142784-0125-46E0-A3CA-004302BD5E21"/>
+    <semantic:sequenceFlow id="_906AE477-1AA9-443C-AFFD-C0F2AAE20D83" sourceRef="_DA142784-0125-46E0-A3CA-004302BD5E21" targetRef="_57EE71B2-5287-46A2-9B24-83A68131714C"/>
+    <semantic:sequenceFlow id="_F8D6251D-FEDF-40FE-9541-89714A5F81D8" sourceRef="_57EE71B2-5287-46A2-9B24-83A68131714C" targetRef="_32AE6A44-B449-40FE-9055-69819469BF98"/>
+    <semantic:sequenceFlow id="_F36A03D5-2835-4BEB-9835-612961CB01B0" sourceRef="_542AE8E6-9CEA-43E3-8177-C685A9F430FE" targetRef="_3330ACC4-BCD9-422A-ADCD-7DDF06A2042D"/>
+    <semantic:sequenceFlow id="_81B53174-A333-4892-8A4E-0654D0DC9059" sourceRef="_3330ACC4-BCD9-422A-ADCD-7DDF06A2042D" targetRef="_32AE6A44-B449-40FE-9055-69819469BF98"/>
+    <semantic:sequenceFlow id="_BCC30BA7-C001-4D9D-B69C-2D99DA0706C5" sourceRef="_32AE6A44-B449-40FE-9055-69819469BF98" targetRef="_F366069F-C180-4D69-B2BF-4124649EC36F"/>
+    <semantic:sequenceFlow id="_DEAA6495-03EC-479A-BAED-836083B9B19F" sourceRef="_F366069F-C180-4D69-B2BF-4124649EC36F" targetRef="_6E1A332C-9187-4C4A-BD0F-27167F940786"/>
+    <semantic:serviceTask completionQuantity="1" id="_5" implementation="##WebService" isForCompensation="false" name="Get credit report" startQuantity="1">
+      <semantic:incoming>_2</semantic:incoming>
+      <semantic:outgoing>_3</semantic:outgoing>
+    </semantic:serviceTask>
+    <semantic:sequenceFlow id="_2" sourceRef="_D94158CC-F5C2-46A2-96A2-CD8B02AF14B4" targetRef="_5"/>
+    <semantic:sequenceFlow id="_3" sourceRef="_5" targetRef="_C77E51FD-9C1B-40F7-9273-100E47069B11"/>
+  </semantic:process>
+  <bpmndi:BPMNDiagram documentation="background=#FFFFFF;count=2;horizontalcount=2;orientation=0;width=597.6;height=842.4;imageableWidth=587.6;imageableHeight=832.4;imageableX=5.0;imageableY=5.0" id="Yaoqiang_Diagram-_1" name="Loan Origination">
+    <bpmndi:BPMNPlane bpmnElement="_6">
+      <bpmndi:BPMNShape bpmnElement="_81354509-EC39-44E5-A266-4286CBB1EFAC" id="Yaoqiang-_81354509-EC39-44E5-A266-4286CBB1EFAC" isExpanded="true" isHorizontal="true">
+        <dc:Bounds height="471.0" width="1524.0" x="384.0" y="120.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="471.0" width="1524.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_B634801B-C2C5-4C55-A4AD-17882B1E87F2" id="Yaoqiang-_B634801B-C2C5-4C55-A4AD-17882B1E87F2" isExpanded="true" isHorizontal="true">
+        <dc:Bounds height="168.0" width="1524.0" x="384.0" y="591.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="168.0" width="1524.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_357D85DD-EB4D-4D21-AAD7-D9895DA1633B" id="Yaoqiang-_357D85DD-EB4D-4D21-AAD7-D9895DA1633B" isExpanded="true" isHorizontal="true">
+        <dc:Bounds height="282.0" width="1524.0" x="384.0" y="759.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="282.0" width="1524.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_A383CA8A-59EA-4E2E-8A40-38363ACF6547" id="Yaoqiang-_A383CA8A-59EA-4E2E-8A40-38363ACF6547">
+        <dc:Bounds height="38.0" width="29.0" x="1738.0" y="489.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="38.0" width="29.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_F36BDDC0-AD29-47B6-8102-9BF334EFB012" id="Yaoqiang-_F36BDDC0-AD29-47B6-8102-9BF334EFB012">
+        <dc:Bounds height="38.0" width="29.0" x="534.0" y="187.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="38.0" width="29.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_676BDDAC-A319-426B-96DF-E1F1EEF38EFB" id="Yaoqiang-_676BDDAC-A319-426B-96DF-E1F1EEF38EFB">
+        <dc:Bounds height="38.0" width="29.0" x="1738.0" y="262.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="38.0" width="29.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_4E504F9B-2618-424F-ABAA-C4D4CC2D75E0" id="Yaoqiang-_4E504F9B-2618-424F-ABAA-C4D4CC2D75E0">
+        <dc:Bounds height="32.0" width="32.0" x="470.0" y="315.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="32.0" width="32.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_0CA1F609-5DFA-43E2-96DE-6CBD97BFAC5A" id="Yaoqiang-_0CA1F609-5DFA-43E2-96DE-6CBD97BFAC5A">
+        <dc:Bounds height="68.0" width="105.0" x="830.0" y="171.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="68.0" width="105.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_C94EFA57-E605-4564-BFC4-22A84C660A6A" id="Yaoqiang-_C94EFA57-E605-4564-BFC4-22A84C660A6A">
+        <dc:Bounds height="68.0" width="105.0" x="1137.0" y="296.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="68.0" width="105.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_D94158CC-F5C2-46A2-96A2-CD8B02AF14B4" id="Yaoqiang-_D94158CC-F5C2-46A2-96A2-CD8B02AF14B4">
+        <dc:Bounds height="42.0" width="42.0" x="705.0" y="309.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="42.0" width="42.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_DA142784-0125-46E0-A3CA-004302BD5E21" id="Yaoqiang-_DA142784-0125-46E0-A3CA-004302BD5E21">
+        <dc:Bounds height="68.0" width="105.0" x="1405.0" y="388.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="68.0" width="105.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_A2A06973-DC30-4BCF-BF0F-1FD60D68E1EB" id="Yaoqiang-_A2A06973-DC30-4BCF-BF0F-1FD60D68E1EB">
+        <dc:Bounds height="32.0" width="32.0" x="1818.0" y="189.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="32.0" width="32.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_63474DBF-E8E4-4C29-AD38-E46DE50EE080" id="Yaoqiang-_63474DBF-E8E4-4C29-AD38-E46DE50EE080" isMarkerVisible="true">
+        <dc:Bounds height="42.0" width="42.0" x="1293.0" y="309.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="42.0" width="42.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_6E1A332C-9187-4C4A-BD0F-27167F940786" id="Yaoqiang-_6E1A332C-9187-4C4A-BD0F-27167F940786">
+        <dc:Bounds height="32.0" width="32.0" x="1818.0" y="411.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="32.0" width="32.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_2017EC19-4BD5-40D7-9014-E7D337A68E01" id="Yaoqiang-_2017EC19-4BD5-40D7-9014-E7D337A68E01">
+        <dc:Bounds height="68.0" width="105.0" x="549.0" y="296.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="68.0" width="105.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_65F6E8B9-FDD3-4770-B12B-87862F37BDF6" id="Yaoqiang-_65F6E8B9-FDD3-4770-B12B-87862F37BDF6">
+        <dc:Bounds height="68.0" width="105.0" x="1663.0" y="171.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="68.0" width="105.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_D6383F72-7F7A-48F8-A742-A26F36A8DC10" id="Yaoqiang-_D6383F72-7F7A-48F8-A742-A26F36A8DC10">
+        <dc:Bounds height="68.0" width="105.0" x="1404.0" y="171.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="68.0" width="105.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_F366069F-C180-4D69-B2BF-4124649EC36F" id="Yaoqiang-_F366069F-C180-4D69-B2BF-4124649EC36F">
+        <dc:Bounds height="68.0" width="105.0" x="1664.0" y="393.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="68.0" width="105.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_C77E51FD-9C1B-40F7-9273-100E47069B11" id="Yaoqiang-_C77E51FD-9C1B-40F7-9273-100E47069B11">
+        <dc:Bounds height="42.0" width="42.0" x="1044.0" y="309.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="42.0" width="42.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_5" id="Yaoqiang-_5">
+        <dc:Bounds height="55.0" width="85.0" x="834.0" y="301.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="55.0" width="85.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_4A0E10F8-6AC7-4AF0-AFD3-5E0CB00BD316" id="Yaoqiang-_4A0E10F8-6AC7-4AF0-AFD3-5E0CB00BD316">
+        <dc:Bounds height="68.0" width="105.0" x="780.0" y="639.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="68.0" width="105.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_ACDC390F-49FD-43A3-ACD6-1EBB8074801D" id="Yaoqiang-_ACDC390F-49FD-43A3-ACD6-1EBB8074801D">
+        <dc:Bounds height="68.0" width="105.0" x="930.0" y="639.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="68.0" width="105.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_3330ACC4-BCD9-422A-ADCD-7DDF06A2042D" id="Yaoqiang-_3330ACC4-BCD9-422A-ADCD-7DDF06A2042D">
+        <dc:Bounds height="68.0" width="105.0" x="1563.0" y="931.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="68.0" width="105.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_32AE6A44-B449-40FE-9055-69819469BF98" id="Yaoqiang-_32AE6A44-B449-40FE-9055-69819469BF98" isMarkerVisible="true">
+        <dc:Bounds height="42.0" width="42.0" x="1595.0" y="839.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="42.0" width="42.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_57EE71B2-5287-46A2-9B24-83A68131714C" id="Yaoqiang-_57EE71B2-5287-46A2-9B24-83A68131714C">
+        <dc:Bounds height="68.0" width="105.0" x="1405.0" y="825.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="68.0" width="105.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_542AE8E6-9CEA-43E3-8177-C685A9F430FE" id="Yaoqiang-_542AE8E6-9CEA-43E3-8177-C685A9F430FE">
+        <dc:Bounds height="32.0" width="32.0" x="1416.0" y="877.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="11.0" y="52.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="_60D986A6-6530-4D75-9648-AF5AFB1CA9A6" id="Yaoqiang-_60D986A6-6530-4D75-9648-AF5AFB1CA9A6" sourceElement="_4A0E10F8-6AC7-4AF0-AFD3-5E0CB00BD316" targetElement="_ACDC390F-49FD-43A3-ACD6-1EBB8074801D">
+        <di:waypoint x="884.6666666666666" y="673.0"/>
+        <di:waypoint x="930.0" y="673.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_8BF5972D-13A9-4941-A60A-F338F0347B05" id="Yaoqiang-_8BF5972D-13A9-4941-A60A-F338F0347B05" sourceElement="_F36BDDC0-AD29-47B6-8102-9BF334EFB012" targetElement="_2017EC19-4BD5-40D7-9014-E7D337A68E01">
+        <di:waypoint x="563.3333333333334" y="205.0"/>
+        <di:waypoint x="601.0" y="205.0"/>
+        <di:waypoint x="601.0" y="296.6666666666667"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_72A5DDBE-554D-4014-BE8C-FB2E7642F4C3" id="Yaoqiang-_72A5DDBE-554D-4014-BE8C-FB2E7642F4C3" sourceElement="_4E504F9B-2618-424F-ABAA-C4D4CC2D75E0" targetElement="_2017EC19-4BD5-40D7-9014-E7D337A68E01">
+        <di:waypoint x="501.9443476574685" y="330.0"/>
+        <di:waypoint x="514.0" y="330.0"/>
+        <di:waypoint x="548.6666666666666" y="330.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_8663B922-4BE9-4192-8BC8-0578B127A8F1" id="Yaoqiang-_8663B922-4BE9-4192-8BC8-0578B127A8F1" sourceElement="_0CA1F609-5DFA-43E2-96DE-6CBD97BFAC5A" targetElement="_C77E51FD-9C1B-40F7-9273-100E47069B11">
+        <di:waypoint x="935.3333333333334" y="205.0"/>
+        <di:waypoint x="1065.0" y="205.0"/>
+        <di:waypoint x="1065.0" y="309.01075268817203"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_DEAA6495-03EC-479A-BAED-836083B9B19F" id="Yaoqiang-_DEAA6495-03EC-479A-BAED-836083B9B19F" sourceElement="_F366069F-C180-4D69-B2BF-4124649EC36F" targetElement="_6E1A332C-9187-4C4A-BD0F-27167F940786">
+        <di:waypoint x="1768.6666666666667" y="427.0"/>
+        <di:waypoint x="1783.0" y="427.0"/>
+        <di:waypoint x="1818.0034725990643" y="427.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_F8D6251D-FEDF-40FE-9541-89714A5F81D8" id="Yaoqiang-_F8D6251D-FEDF-40FE-9541-89714A5F81D8" sourceElement="_57EE71B2-5287-46A2-9B24-83A68131714C" targetElement="_32AE6A44-B449-40FE-9055-69819469BF98">
+        <di:waypoint x="1510.0" y="859.0"/>
+        <di:waypoint x="1524.0" y="859.0"/>
+        <di:waypoint x="1596.3333333333333" y="859.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_5D0B2CCB-8CD7-4D85-B56B-2095BDBF6240" id="Yaoqiang-_5D0B2CCB-8CD7-4D85-B56B-2095BDBF6240" sourceElement="_4E504F9B-2618-424F-ABAA-C4D4CC2D75E0" targetElement="_F36BDDC0-AD29-47B6-8102-9BF334EFB012">
+        <di:waypoint x="485.0" y="315.364613910662"/>
+        <di:waypoint x="485.0" y="206.0"/>
+        <di:waypoint x="534.0" y="206.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_78F951B5-7470-4538-AA6C-CD08E4D422C6" id="Yaoqiang-_78F951B5-7470-4538-AA6C-CD08E4D422C6" sourceElement="_ACDC390F-49FD-43A3-ACD6-1EBB8074801D" targetElement="_C77E51FD-9C1B-40F7-9273-100E47069B11">
+        <di:waypoint x="1035.3333333333333" y="673.0"/>
+        <di:waypoint x="1065.0" y="673.0"/>
+        <di:waypoint x="1065.0" y="350.98924731182797"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_BCC30BA7-C001-4D9D-B69C-2D99DA0706C5" id="Yaoqiang-_BCC30BA7-C001-4D9D-B69C-2D99DA0706C5" sourceElement="_32AE6A44-B449-40FE-9055-69819469BF98" targetElement="_F366069F-C180-4D69-B2BF-4124649EC36F">
+        <di:waypoint x="1616.0" y="839.3333333333334"/>
+        <di:waypoint x="1616.0" y="427.0"/>
+        <di:waypoint x="1664.6666666666667" y="427.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_0AEB1821-0E16-4CC8-BC7C-9AF71C35F88F" id="Yaoqiang-_0AEB1821-0E16-4CC8-BC7C-9AF71C35F88F" sourceElement="_65F6E8B9-FDD3-4770-B12B-87862F37BDF6" targetElement="_A2A06973-DC30-4BCF-BF0F-1FD60D68E1EB">
+        <di:waypoint x="1768.6666666666667" y="205.0"/>
+        <di:waypoint x="1782.0" y="205.0"/>
+        <di:waypoint x="1818.0034725990643" y="205.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_3D6F2455-BFFB-44BB-A052-892FB15FEEB4" id="Yaoqiang-_3D6F2455-BFFB-44BB-A052-892FB15FEEB4" sourceElement="_63474DBF-E8E4-4C29-AD38-E46DE50EE080" targetElement="_DA142784-0125-46E0-A3CA-004302BD5E21">
+        <di:waypoint x="1314.0" y="351.3333333333333"/>
+        <di:waypoint x="1314.0" y="422.0"/>
+        <di:waypoint x="1404.6666666666667" y="422.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_4300C232-1B1B-4D7D-9056-A153E31A2A5E" id="Yaoqiang-_4300C232-1B1B-4D7D-9056-A153E31A2A5E" sourceElement="_D94158CC-F5C2-46A2-96A2-CD8B02AF14B4" targetElement="_0CA1F609-5DFA-43E2-96DE-6CBD97BFAC5A">
+        <di:waypoint x="730.0" y="312.6666666666667"/>
+        <di:waypoint x="730.0" y="205.0"/>
+        <di:waypoint x="830.0" y="205.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_3" id="Yaoqiang-_3" sourceElement="_5" targetElement="_C77E51FD-9C1B-40F7-9273-100E47069B11">
+        <di:waypoint x="919.3333333333334" y="328.5"/>
+        <di:waypoint x="1044.6666666666667" y="330.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_2" id="Yaoqiang-_2" sourceElement="_D94158CC-F5C2-46A2-96A2-CD8B02AF14B4" targetElement="_5">
+        <di:waypoint x="747.3333333333334" y="330.0"/>
+        <di:waypoint x="834.0" y="328.5"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_B9562572-75E4-4143-BC81-4D79CEDB65D6" id="Yaoqiang-_B9562572-75E4-4143-BC81-4D79CEDB65D6" sourceElement="_C77E51FD-9C1B-40F7-9273-100E47069B11" targetElement="_C94EFA57-E605-4564-BFC4-22A84C660A6A">
+        <di:waypoint x="1086.0" y="330.0"/>
+        <di:waypoint x="1100.0" y="330.0"/>
+        <di:waypoint x="1136.6666666666667" y="330.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_880E2204-2897-40BA-9C2F-B81F9580EF75" id="Yaoqiang-_880E2204-2897-40BA-9C2F-B81F9580EF75" sourceElement="_D94158CC-F5C2-46A2-96A2-CD8B02AF14B4" targetElement="_4A0E10F8-6AC7-4AF0-AFD3-5E0CB00BD316">
+        <di:waypoint x="726.0" y="351.3333333333333"/>
+        <di:waypoint x="726.0" y="674.0"/>
+        <di:waypoint x="780.6666666666666" y="674.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_A80D6FF4-D222-4AAF-9161-8FB83F91AEED" id="Yaoqiang-_A80D6FF4-D222-4AAF-9161-8FB83F91AEED" sourceElement="_C94EFA57-E605-4564-BFC4-22A84C660A6A" targetElement="_63474DBF-E8E4-4C29-AD38-E46DE50EE080">
+        <di:waypoint x="1242.0" y="330.0"/>
+        <di:waypoint x="1256.0" y="330.0"/>
+        <di:waypoint x="1292.6666666666667" y="330.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_95613936-EA5E-432B-8F84-5D29E58EA82F" id="Yaoqiang-_95613936-EA5E-432B-8F84-5D29E58EA82F" sourceElement="_F366069F-C180-4D69-B2BF-4124649EC36F" targetElement="_A383CA8A-59EA-4E2E-8A40-38363ACF6547">
+        <di:waypoint x="1716.0" y="460.6666666666667"/>
+        <di:waypoint x="1716.0" y="508.0"/>
+        <di:waypoint x="1738.0" y="508.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_F36A03D5-2835-4BEB-9835-612961CB01B0" id="Yaoqiang-_F36A03D5-2835-4BEB-9835-612961CB01B0" sourceElement="_542AE8E6-9CEA-43E3-8177-C685A9F430FE" targetElement="_3330ACC4-BCD9-422A-ADCD-7DDF06A2042D">
+        <di:waypoint x="1432.0" y="908.6527717443756"/>
+        <di:waypoint x="1432.0" y="945.0"/>
+        <di:waypoint x="1563.3333333333333" y="945.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_81B53174-A333-4892-8A4E-0654D0DC9059" id="Yaoqiang-_81B53174-A333-4892-8A4E-0654D0DC9059" sourceElement="_3330ACC4-BCD9-422A-ADCD-7DDF06A2042D" targetElement="_32AE6A44-B449-40FE-9055-69819469BF98">
+        <di:waypoint x="1616.0" y="931.3333333333334"/>
+        <di:waypoint x="1616.0" y="917.0"/>
+        <di:waypoint x="1616.0" y="880.6666666666666"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_93351D59-990B-46B0-80AB-FEEF088E9D7B" id="Yaoqiang-_93351D59-990B-46B0-80AB-FEEF088E9D7B" sourceElement="_63474DBF-E8E4-4C29-AD38-E46DE50EE080" targetElement="_D6383F72-7F7A-48F8-A742-A26F36A8DC10">
+        <di:waypoint x="1314.0" y="308.6666666666667"/>
+        <di:waypoint x="1314.0" y="205.0"/>
+        <di:waypoint x="1404.6666666666667" y="205.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_0E7BF85E-0000-43F9-B735-3BF726227B81" id="Yaoqiang-_0E7BF85E-0000-43F9-B735-3BF726227B81" sourceElement="_2017EC19-4BD5-40D7-9014-E7D337A68E01" targetElement="_D94158CC-F5C2-46A2-96A2-CD8B02AF14B4">
+        <di:waypoint x="654.0" y="330.0"/>
+        <di:waypoint x="668.0" y="330.0"/>
+        <di:waypoint x="704.6666666666666" y="330.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_906AE477-1AA9-443C-AFFD-C0F2AAE20D83" id="Yaoqiang-_906AE477-1AA9-443C-AFFD-C0F2AAE20D83" sourceElement="_DA142784-0125-46E0-A3CA-004302BD5E21" targetElement="_57EE71B2-5287-46A2-9B24-83A68131714C">
+        <di:waypoint x="1457.5" y="456.6666666666667"/>
+        <di:waypoint x="1457.5" y="824.6666666666666"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_07B03EA5-891A-4BF5-8779-1A6912D3B183" id="Yaoqiang-_07B03EA5-891A-4BF5-8779-1A6912D3B183" sourceElement="_D6383F72-7F7A-48F8-A742-A26F36A8DC10" targetElement="_65F6E8B9-FDD3-4770-B12B-87862F37BDF6">
+        <di:waypoint x="1508.6666666666667" y="205.0"/>
+        <di:waypoint x="1663.3333333333333" y="205.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_346DBF5F-09DC-4A36-95E4-5019CA5D6457" id="Yaoqiang-_346DBF5F-09DC-4A36-95E4-5019CA5D6457" sourceElement="_65F6E8B9-FDD3-4770-B12B-87862F37BDF6" targetElement="_676BDDAC-A319-426B-96DF-E1F1EEF38EFB">
+        <di:waypoint x="1698.0" y="239.33333333333331"/>
+        <di:waypoint x="1698.0" y="280.0"/>
+        <di:waypoint x="1738.0" y="280.0"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</semantic:definitions>
