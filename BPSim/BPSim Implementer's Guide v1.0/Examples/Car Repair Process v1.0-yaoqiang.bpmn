@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="MacRoman" standalone="yes"?>
+<semantic:definitions xmlns:semantic="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:tns="http://www.trisotech.com/definitions/_1364754596385" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:yaoqiang="http://bpmn.sourceforge.net" exporter="" exporterVersion="" expressionLanguage="http://www.w3.org/1999/XPath" id="_1364754596385" name="Car Repair Process v0.20" targetNamespace="http://www.trisotech.com/definitions/_1364754596385" typeLanguage="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL http://bpmn.sourceforge.net/schemas/BPMN20.xsd">
+  <semantic:process id="_6" isClosed="false" isExecutable="false" processType="None">
+    <semantic:dataObject id="DF1364754596565" isCollection="false"/>
+    <semantic:dataObject id="DF1364754596566" isCollection="false"/>
+    <semantic:startEvent id="_51BDA265-2FF5-40CB-B68D-1FBF9DAAA74C" isInterrupting="true" name="Customer Arrives" parallelMultiple="false">
+      <semantic:outgoing>_896FB358-BF3A-4609-8E83-8405D72DEA9B</semantic:outgoing>
+    </semantic:startEvent>
+    <semantic:task completionQuantity="1" id="_BA2B78BE-06A0-46C8-9BA2-D9EC923FDEAA" isForCompensation="false" name="Make Estimate" startQuantity="1">
+      <semantic:incoming>_896FB358-BF3A-4609-8E83-8405D72DEA9B</semantic:incoming>
+      <semantic:outgoing>_222A5787-C138-497B-8638-02121C5E0477</semantic:outgoing>
+      <semantic:ioSpecification>
+        <semantic:dataInput id="Din1364754596628" isCollection="false"/>
+        <semantic:dataOutput id="Dout1364754596626" isCollection="false"/>
+        <semantic:inputSet>
+          <semantic:dataInputRefs>Din1364754596628</semantic:dataInputRefs>
+        </semantic:inputSet>
+        <semantic:outputSet>
+          <semantic:dataOutputRefs>Dout1364754596626</semantic:dataOutputRefs>
+        </semantic:outputSet>
+      </semantic:ioSpecification>
+      <semantic:dataInputAssociation id="_9EB2F46F-FA87-4DB3-9EA5-4CBA7FC355B2">
+        <semantic:sourceRef>_6F155721-2EB2-4570-BFE0-E39C0B3EAD82</semantic:sourceRef>
+        <semantic:targetRef>Din1364754596628</semantic:targetRef>
+      </semantic:dataInputAssociation>
+      <semantic:dataOutputAssociation id="_D5635CA0-2E65-458D-A25B-B7EAC7E888E2">
+        <semantic:sourceRef>Dout1364754596626</semantic:sourceRef>
+        <semantic:targetRef>_44E5E2EF-2B2F-4689-8531-4D451808B0A6</semantic:targetRef>
+      </semantic:dataOutputAssociation>
+    </semantic:task>
+    <semantic:task completionQuantity="1" id="_D4804AD8-3EE4-47F1-942C-D9EAEA2811F0" isForCompensation="false" name="Verify if Estimate Accepted" startQuantity="1">
+      <semantic:incoming>_222A5787-C138-497B-8638-02121C5E0477</semantic:incoming>
+      <semantic:outgoing>_1F31B20E-FE41-440D-9D44-E7437D1639C6</semantic:outgoing>
+      <semantic:ioSpecification>
+        <semantic:dataInput id="Din1364754596627" isCollection="false"/>
+        <semantic:inputSet>
+          <semantic:dataInputRefs>Din1364754596627</semantic:dataInputRefs>
+        </semantic:inputSet>
+        <semantic:outputSet/>
+      </semantic:ioSpecification>
+      <semantic:dataInputAssociation id="_C2B6A48C-B636-4186-955B-9C73CD3FA580">
+        <semantic:sourceRef>_44E5E2EF-2B2F-4689-8531-4D451808B0A6</semantic:sourceRef>
+        <semantic:targetRef>Din1364754596627</semantic:targetRef>
+      </semantic:dataInputAssociation>
+    </semantic:task>
+    <semantic:exclusiveGateway gatewayDirection="Unspecified" id="_F7498C3B-5925-415A-80D7-D16758B353C9" name="Accepted?">
+      <semantic:incoming>_1F31B20E-FE41-440D-9D44-E7437D1639C6</semantic:incoming>
+      <semantic:outgoing>_3654E294-536A-4CD2-9950-11F02657EE60</semantic:outgoing>
+      <semantic:outgoing>_3B161ED4-4C10-4349-9A2D-B4E002D5EC0E</semantic:outgoing>
+    </semantic:exclusiveGateway>
+    <semantic:endEvent id="_87E52808-857B-45B0-93E8-F6D7AC0B4B3E" name="Initial Estimate Not Accepted">
+      <semantic:incoming>_3654E294-536A-4CD2-9950-11F02657EE60</semantic:incoming>
+    </semantic:endEvent>
+    <semantic:subProcess completionQuantity="1" id="_EBE375AE-E49A-47F7-8E04-DA6A1532ECC2" isForCompensation="false" name="Repair Car" startQuantity="1" triggeredByEvent="false">
+      <semantic:incoming>_3B161ED4-4C10-4349-9A2D-B4E002D5EC0E</semantic:incoming>
+      <semantic:outgoing>_0884CEBC-44CE-4BE2-958F-8941946BDA64</semantic:outgoing>
+      <semantic:startEvent id="_FA77D7D8-9C02-4006-942A-B003AEDA5E3C" isInterrupting="true" name="Start Repairs" parallelMultiple="false">
+        <semantic:outgoing>_77A40DB9-8B5A-4E50-9138-ADCA63E4A219</semantic:outgoing>
+      </semantic:startEvent>
+      <semantic:exclusiveGateway gatewayDirection="Unspecified" id="_7D509478-6734-4004-B618-32339FA33D31">
+        <semantic:incoming>_77A40DB9-8B5A-4E50-9138-ADCA63E4A219</semantic:incoming>
+        <semantic:incoming>_9C46FDB0-2EBD-4B2F-A72A-0189A4D76A73</semantic:incoming>
+        <semantic:outgoing>_E2740126-A38E-40E2-9FA9-554778B51381</semantic:outgoing>
+      </semantic:exclusiveGateway>
+      <semantic:subProcess completionQuantity="1" id="_AF4F8D5E-E399-4ED8-992F-9AA653C17D6E" isForCompensation="false" startQuantity="1" triggeredByEvent="true">
+        <semantic:startEvent id="_25E36E2C-9196-4170-8BA3-52DDF55D177E" isInterrupting="false" name="Customer Requests Additional  Repairs" parallelMultiple="false">
+          <semantic:outgoing>_62BD6E5E-B5C0-4719-86CE-D5E30A1D128F</semantic:outgoing>
+          <semantic:signalEventDefinition id="_25E36E2C-9196-4170-8BA3-52DDF55D177E_ED_1"/>
+        </semantic:startEvent>
+        <semantic:task completionQuantity="1" id="_D226B9E0-0194-481E-AAEC-32473D45FEEF" isForCompensation="false" name="Add Additional Issue to List" startQuantity="1">
+          <semantic:incoming>_62BD6E5E-B5C0-4719-86CE-D5E30A1D128F</semantic:incoming>
+          <semantic:outgoing>_24A3FEEC-8DE6-42DC-9B85-D076EB8909A4</semantic:outgoing>
+          <semantic:ioSpecification>
+            <semantic:dataOutput id="Dout1364754596601" isCollection="false"/>
+            <semantic:inputSet/>
+            <semantic:outputSet>
+              <semantic:dataOutputRefs>Dout1364754596601</semantic:dataOutputRefs>
+            </semantic:outputSet>
+          </semantic:ioSpecification>
+          <semantic:dataOutputAssociation id="_94CD5662-8EB9-4B23-A486-8B6970314AD7">
+            <semantic:sourceRef>Dout1364754596601</semantic:sourceRef>
+            <semantic:targetRef>_C96534C9-934E-415D-8903-28DA8712B25E</semantic:targetRef>
+          </semantic:dataOutputAssociation>
+        </semantic:task>
+        <semantic:endEvent id="_4C551546-C127-4CD9-9106-78A3FC8978A6" name="Issue List Amended By Customer">
+          <semantic:incoming>_24A3FEEC-8DE6-42DC-9B85-D076EB8909A4</semantic:incoming>
+        </semantic:endEvent>
+        <semantic:dataObjectReference dataObjectRef="DF1364754596565" id="_C96534C9-934E-415D-8903-28DA8712B25E" name="Itemized  Issues">
+          <semantic:dataState name="Amended"/>
+        </semantic:dataObjectReference>
+        <semantic:sequenceFlow id="_62BD6E5E-B5C0-4719-86CE-D5E30A1D128F" sourceRef="_25E36E2C-9196-4170-8BA3-52DDF55D177E" targetRef="_D226B9E0-0194-481E-AAEC-32473D45FEEF"/>
+        <semantic:sequenceFlow id="_24A3FEEC-8DE6-42DC-9B85-D076EB8909A4" sourceRef="_D226B9E0-0194-481E-AAEC-32473D45FEEF" targetRef="_4C551546-C127-4CD9-9106-78A3FC8978A6"/>
+      </semantic:subProcess>
+      <semantic:task completionQuantity="1" id="_91C1F9A1-0EB9-4FD4-A2A7-99C2E8C34854" isForCompensation="false" name="Take Apart for Issue" startQuantity="1">
+        <semantic:incoming>_E2740126-A38E-40E2-9FA9-554778B51381</semantic:incoming>
+        <semantic:outgoing>_F165F4A8-69B1-4B19-A1A4-470BDE12FA77</semantic:outgoing>
+      </semantic:task>
+      <semantic:task completionQuantity="1" id="_A9E2794B-4C41-429B-9C04-46C5B8741DDC" isForCompensation="false" name="Inspect for Issue" startQuantity="1">
+        <semantic:incoming>_F165F4A8-69B1-4B19-A1A4-470BDE12FA77</semantic:incoming>
+        <semantic:outgoing>_FE1BBBD3-1730-4BC0-895D-76106317615D</semantic:outgoing>
+      </semantic:task>
+      <semantic:exclusiveGateway gatewayDirection="Unspecified" id="_EA5D13A2-32CB-4F3D-80EF-F0886538C228">
+        <semantic:incoming>_FE1BBBD3-1730-4BC0-895D-76106317615D</semantic:incoming>
+        <semantic:incoming>_F298A83E-5AD6-4BB6-95AF-E5B0A26A51FC</semantic:incoming>
+        <semantic:outgoing>_53EFF0AE-C44D-4EA4-A3AF-FA7E52B4CE52</semantic:outgoing>
+      </semantic:exclusiveGateway>
+      <semantic:task completionQuantity="1" id="_8040CF1A-3CAA-4A98-8E94-DD405EF233E9" isForCompensation="false" name="Handle New Found Issue" startQuantity="1">
+        <semantic:incoming>_BEFA7BF4-D1C2-47CB-B0CD-EF87E541B1BC</semantic:incoming>
+        <semantic:outgoing>_F298A83E-5AD6-4BB6-95AF-E5B0A26A51FC</semantic:outgoing>
+      </semantic:task>
+      <semantic:exclusiveGateway gatewayDirection="Unspecified" id="_5C0BF369-3360-43C3-9792-3E6492BA7291">
+        <semantic:incoming>_53EFF0AE-C44D-4EA4-A3AF-FA7E52B4CE52</semantic:incoming>
+        <semantic:outgoing>_751A4C0A-FC0F-441E-A587-4016BE8101B3</semantic:outgoing>
+        <semantic:outgoing>_BEFA7BF4-D1C2-47CB-B0CD-EF87E541B1BC</semantic:outgoing>
+      </semantic:exclusiveGateway>
+      <semantic:subProcess completionQuantity="1" id="_C89D1737-9813-44C2-A5D5-87649AE7AEC6" isForCompensation="false" startQuantity="1" triggeredByEvent="true">
+        <semantic:startEvent id="_F9A272EE-D325-44CF-AFFC-4A615D2C9971" isInterrupting="true" name="Repairs Aborted" parallelMultiple="false">
+          <semantic:outgoing>_CF5A1710-35F8-48B6-85FD-A90C99FEC5B3</semantic:outgoing>
+          <semantic:signalEventDefinition id="_F9A272EE-D325-44CF-AFFC-4A615D2C9971_ED_1"/>
+        </semantic:startEvent>
+        <semantic:task completionQuantity="1" id="_52CCF00D-C0E3-4931-8D4E-6C989E317A07" isForCompensation="false" name="Prepare Car for remittance" startQuantity="1">
+          <semantic:incoming>_CF5A1710-35F8-48B6-85FD-A90C99FEC5B3</semantic:incoming>
+          <semantic:outgoing>_19517CEB-6A0E-4B88-8911-FEEEFE3B55CE</semantic:outgoing>
+          <semantic:ioSpecification>
+            <semantic:dataOutput id="Dout1364754596612" isCollection="false"/>
+            <semantic:inputSet/>
+            <semantic:outputSet>
+              <semantic:dataOutputRefs>Dout1364754596612</semantic:dataOutputRefs>
+            </semantic:outputSet>
+          </semantic:ioSpecification>
+          <semantic:dataOutputAssociation id="_9DBCFE15-F025-4A3B-A3F7-41BFCFA182D1">
+            <semantic:sourceRef>Dout1364754596612</semantic:sourceRef>
+            <semantic:targetRef>_4134CEB9-F012-4F9E-9EF3-932E18E731E5</semantic:targetRef>
+          </semantic:dataOutputAssociation>
+        </semantic:task>
+        <semantic:endEvent id="_2BBAB508-4026-40F7-8FC3-23E68E77EE46" name="Repairs Aborted">
+          <semantic:incoming>_19517CEB-6A0E-4B88-8911-FEEEFE3B55CE</semantic:incoming>
+          <semantic:terminateEventDefinition id="_2BBAB508-4026-40F7-8FC3-23E68E77EE46_ED_1"/>
+        </semantic:endEvent>
+        <semantic:dataObjectReference dataObjectRef="DF1364754596565" id="_4134CEB9-F012-4F9E-9EF3-932E18E731E5" name="Itemized  Issues">
+          <semantic:dataState name="Completed Items"/>
+        </semantic:dataObjectReference>
+        <semantic:sequenceFlow id="_CF5A1710-35F8-48B6-85FD-A90C99FEC5B3" sourceRef="_F9A272EE-D325-44CF-AFFC-4A615D2C9971" targetRef="_52CCF00D-C0E3-4931-8D4E-6C989E317A07"/>
+        <semantic:sequenceFlow id="_19517CEB-6A0E-4B88-8911-FEEEFE3B55CE" sourceRef="_52CCF00D-C0E3-4931-8D4E-6C989E317A07" targetRef="_2BBAB508-4026-40F7-8FC3-23E68E77EE46"/>
+      </semantic:subProcess>
+      <semantic:task completionQuantity="1" id="_071B5D0A-5225-4E55-9105-8D15169DAC96" isForCompensation="false" name="Repair Issue" startQuantity="1">
+        <semantic:incoming>_751A4C0A-FC0F-441E-A587-4016BE8101B3</semantic:incoming>
+        <semantic:outgoing>_7BCC27D0-D619-4895-92F5-4516D9583479</semantic:outgoing>
+      </semantic:task>
+      <semantic:task completionQuantity="1" id="_2A752317-508C-4BB1-9AE7-49FBC7391B2B" isForCompensation="false" name="Verify if more Issues on Itemized List" startQuantity="1">
+        <semantic:incoming>_7BCC27D0-D619-4895-92F5-4516D9583479</semantic:incoming>
+        <semantic:outgoing>_8C74C362-DDEF-48B9-AED2-E4034E917A40</semantic:outgoing>
+        <semantic:ioSpecification>
+          <semantic:dataInput id="Din1364754596619" isCollection="false"/>
+          <semantic:inputSet>
+            <semantic:dataInputRefs>Din1364754596619</semantic:dataInputRefs>
+          </semantic:inputSet>
+          <semantic:outputSet/>
+        </semantic:ioSpecification>
+        <semantic:dataInputAssociation id="_7586D519-92CA-4824-93B9-59E925689D65">
+          <semantic:sourceRef>_A5699C3D-74E0-497C-8B62-607B9909A0C9</semantic:sourceRef>
+          <semantic:targetRef>Din1364754596619</semantic:targetRef>
+        </semantic:dataInputAssociation>
+      </semantic:task>
+      <semantic:exclusiveGateway gatewayDirection="Unspecified" id="_B78F09D7-A493-4FDC-B20C-B251C7405D95" name="Have further issues?">
+        <semantic:incoming>_8C74C362-DDEF-48B9-AED2-E4034E917A40</semantic:incoming>
+        <semantic:outgoing>_9C46FDB0-2EBD-4B2F-A72A-0189A4D76A73</semantic:outgoing>
+        <semantic:outgoing>_4799D2B0-A204-4A08-94ED-796C25D9AE57</semantic:outgoing>
+      </semantic:exclusiveGateway>
+      <semantic:task completionQuantity="1" id="_DFFBC045-8147-468B-BC85-DAF1134E19CF" isForCompensation="false" name="Prepare Car for Remittance" startQuantity="1">
+        <semantic:incoming>_4799D2B0-A204-4A08-94ED-796C25D9AE57</semantic:incoming>
+        <semantic:outgoing>_56B35746-D946-481B-95EF-27D2CB8F4D29</semantic:outgoing>
+      </semantic:task>
+      <semantic:endEvent id="_B67579E4-E038-4D9D-AA46-A3F9628CADA1" name="Repairs Completed">
+        <semantic:incoming>_56B35746-D946-481B-95EF-27D2CB8F4D29</semantic:incoming>
+      </semantic:endEvent>
+      <semantic:dataObjectReference dataObjectRef="DF1364754596565" id="_A5699C3D-74E0-497C-8B62-607B9909A0C9" name="Itemized  Issues">
+        <semantic:dataState name="Accepted"/>
+      </semantic:dataObjectReference>
+      <semantic:sequenceFlow id="_77A40DB9-8B5A-4E50-9138-ADCA63E4A219" sourceRef="_FA77D7D8-9C02-4006-942A-B003AEDA5E3C" targetRef="_7D509478-6734-4004-B618-32339FA33D31"/>
+      <semantic:sequenceFlow id="_E2740126-A38E-40E2-9FA9-554778B51381" sourceRef="_7D509478-6734-4004-B618-32339FA33D31" targetRef="_91C1F9A1-0EB9-4FD4-A2A7-99C2E8C34854"/>
+      <semantic:sequenceFlow id="_9C46FDB0-2EBD-4B2F-A72A-0189A4D76A73" name="More Issues to Repair" sourceRef="_B78F09D7-A493-4FDC-B20C-B251C7405D95" targetRef="_7D509478-6734-4004-B618-32339FA33D31"/>
+      <semantic:sequenceFlow id="_4799D2B0-A204-4A08-94ED-796C25D9AE57" name="No More Issues to Repair" sourceRef="_B78F09D7-A493-4FDC-B20C-B251C7405D95" targetRef="_DFFBC045-8147-468B-BC85-DAF1134E19CF"/>
+      <semantic:sequenceFlow id="_F165F4A8-69B1-4B19-A1A4-470BDE12FA77" sourceRef="_91C1F9A1-0EB9-4FD4-A2A7-99C2E8C34854" targetRef="_A9E2794B-4C41-429B-9C04-46C5B8741DDC"/>
+      <semantic:sequenceFlow id="_53EFF0AE-C44D-4EA4-A3AF-FA7E52B4CE52" sourceRef="_EA5D13A2-32CB-4F3D-80EF-F0886538C228" targetRef="_5C0BF369-3360-43C3-9792-3E6492BA7291"/>
+      <semantic:sequenceFlow id="_751A4C0A-FC0F-441E-A587-4016BE8101B3" name="No Added  Issue Found" sourceRef="_5C0BF369-3360-43C3-9792-3E6492BA7291" targetRef="_071B5D0A-5225-4E55-9105-8D15169DAC96"/>
+      <semantic:sequenceFlow id="_BEFA7BF4-D1C2-47CB-B0CD-EF87E541B1BC" name="New Issue  Found" sourceRef="_5C0BF369-3360-43C3-9792-3E6492BA7291" targetRef="_8040CF1A-3CAA-4A98-8E94-DD405EF233E9"/>
+      <semantic:sequenceFlow id="_FE1BBBD3-1730-4BC0-895D-76106317615D" sourceRef="_A9E2794B-4C41-429B-9C04-46C5B8741DDC" targetRef="_EA5D13A2-32CB-4F3D-80EF-F0886538C228"/>
+      <semantic:sequenceFlow id="_F298A83E-5AD6-4BB6-95AF-E5B0A26A51FC" sourceRef="_8040CF1A-3CAA-4A98-8E94-DD405EF233E9" targetRef="_EA5D13A2-32CB-4F3D-80EF-F0886538C228"/>
+      <semantic:sequenceFlow id="_7BCC27D0-D619-4895-92F5-4516D9583479" sourceRef="_071B5D0A-5225-4E55-9105-8D15169DAC96" targetRef="_2A752317-508C-4BB1-9AE7-49FBC7391B2B"/>
+      <semantic:sequenceFlow id="_8C74C362-DDEF-48B9-AED2-E4034E917A40" sourceRef="_2A752317-508C-4BB1-9AE7-49FBC7391B2B" targetRef="_B78F09D7-A493-4FDC-B20C-B251C7405D95"/>
+      <semantic:sequenceFlow id="_56B35746-D946-481B-95EF-27D2CB8F4D29" sourceRef="_DFFBC045-8147-468B-BC85-DAF1134E19CF" targetRef="_B67579E4-E038-4D9D-AA46-A3F9628CADA1"/>
+    </semantic:subProcess>
+    <semantic:task completionQuantity="1" id="_956694A6-DFD0-4422-800E-A7DF51A627C0" isForCompensation="false" name="Prepare Invoice" startQuantity="1">
+      <semantic:incoming>_0884CEBC-44CE-4BE2-958F-8941946BDA64</semantic:incoming>
+      <semantic:outgoing>_79CF3D66-DDC0-4E70-A721-206B98C9106D</semantic:outgoing>
+    </semantic:task>
+    <semantic:task completionQuantity="1" id="_78172A06-7EC8-47CC-B49B-01EAD0676195" isForCompensation="false" name="Remit Car" startQuantity="1">
+      <semantic:incoming>_CB71865E-954A-4D3D-874F-8DB33A5B391B</semantic:incoming>
+      <semantic:outgoing>_9088D441-44C5-462B-8695-47D60A7BC451</semantic:outgoing>
+    </semantic:task>
+    <semantic:endEvent id="_4CFC937C-2E42-4671-859E-42E710931963" name="Customer Leaves Shop">
+      <semantic:incoming>_9088D441-44C5-462B-8695-47D60A7BC451</semantic:incoming>
+    </semantic:endEvent>
+    <semantic:task completionQuantity="1" id="_12A4A22E-9449-4E50-BDFC-AC00C8DE8660" isForCompensation="false" name="Accept Payment" startQuantity="1">
+      <semantic:incoming>_79CF3D66-DDC0-4E70-A721-206B98C9106D</semantic:incoming>
+      <semantic:outgoing>_CB71865E-954A-4D3D-874F-8DB33A5B391B</semantic:outgoing>
+    </semantic:task>
+    <semantic:dataObjectReference dataObjectRef="DF1364754596565" id="_44E5E2EF-2B2F-4689-8531-4D451808B0A6" name="Itemized  Issues">
+      <semantic:dataState name="Estimated"/>
+    </semantic:dataObjectReference>
+    <semantic:dataObjectReference dataObjectRef="DF1364754596566" id="_6F155721-2EB2-4570-BFE0-E39C0B3EAD82" name="Reported Issues"/>
+    <semantic:sequenceFlow id="_896FB358-BF3A-4609-8E83-8405D72DEA9B" sourceRef="_51BDA265-2FF5-40CB-B68D-1FBF9DAAA74C" targetRef="_BA2B78BE-06A0-46C8-9BA2-D9EC923FDEAA"/>
+    <semantic:sequenceFlow id="_222A5787-C138-497B-8638-02121C5E0477" sourceRef="_BA2B78BE-06A0-46C8-9BA2-D9EC923FDEAA" targetRef="_D4804AD8-3EE4-47F1-942C-D9EAEA2811F0"/>
+    <semantic:sequenceFlow id="_1F31B20E-FE41-440D-9D44-E7437D1639C6" sourceRef="_D4804AD8-3EE4-47F1-942C-D9EAEA2811F0" targetRef="_F7498C3B-5925-415A-80D7-D16758B353C9"/>
+    <semantic:sequenceFlow id="_3654E294-536A-4CD2-9950-11F02657EE60" name="Initial Estimate Not Accepted" sourceRef="_F7498C3B-5925-415A-80D7-D16758B353C9" targetRef="_87E52808-857B-45B0-93E8-F6D7AC0B4B3E"/>
+    <semantic:sequenceFlow id="_3B161ED4-4C10-4349-9A2D-B4E002D5EC0E" name="Initial Estimate Accepted" sourceRef="_F7498C3B-5925-415A-80D7-D16758B353C9" targetRef="_EBE375AE-E49A-47F7-8E04-DA6A1532ECC2"/>
+    <semantic:sequenceFlow id="_9088D441-44C5-462B-8695-47D60A7BC451" sourceRef="_78172A06-7EC8-47CC-B49B-01EAD0676195" targetRef="_4CFC937C-2E42-4671-859E-42E710931963"/>
+    <semantic:sequenceFlow id="_0884CEBC-44CE-4BE2-958F-8941946BDA64" sourceRef="_EBE375AE-E49A-47F7-8E04-DA6A1532ECC2" targetRef="_956694A6-DFD0-4422-800E-A7DF51A627C0"/>
+    <semantic:sequenceFlow id="_79CF3D66-DDC0-4E70-A721-206B98C9106D" sourceRef="_956694A6-DFD0-4422-800E-A7DF51A627C0" targetRef="_12A4A22E-9449-4E50-BDFC-AC00C8DE8660"/>
+    <semantic:sequenceFlow id="_CB71865E-954A-4D3D-874F-8DB33A5B391B" sourceRef="_12A4A22E-9449-4E50-BDFC-AC00C8DE8660" targetRef="_78172A06-7EC8-47CC-B49B-01EAD0676195"/>
+  </semantic:process>
+  <bpmndi:BPMNDiagram documentation="background=#FFFFFF;count=1;horizontalcount=3;orientation=0;width=597.6;height=842.4;imageableWidth=587.6;imageableHeight=832.4;imageableX=5.0;imageableY=5.0" id="Yaoqiang_Diagram-_1" name="Car Repair">
+    <bpmndi:BPMNPlane bpmnElement="_6">
+      <bpmndi:BPMNShape bpmnElement="_51BDA265-2FF5-40CB-B68D-1FBF9DAAA74C" id="Yaoqiang-_51BDA265-2FF5-40CB-B68D-1FBF9DAAA74C">
+        <dc:Bounds height="32.0" width="32.0" x="101.0" y="426.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_BA2B78BE-06A0-46C8-9BA2-D9EC923FDEAA" id="Yaoqiang-_BA2B78BE-06A0-46C8-9BA2-D9EC923FDEAA">
+        <dc:Bounds height="68.0" width="85.0" x="167.0" y="407.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_D4804AD8-3EE4-47F1-942C-D9EAEA2811F0" id="Yaoqiang-_D4804AD8-3EE4-47F1-942C-D9EAEA2811F0">
+        <dc:Bounds height="68.0" width="85.0" x="287.0" y="407.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_F7498C3B-5925-415A-80D7-D16758B353C9" id="Yaoqiang-_F7498C3B-5925-415A-80D7-D16758B353C9" isMarkerVisible="true">
+        <dc:Bounds height="42.0" width="42.0" x="407.0" y="420.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_87E52808-857B-45B0-93E8-F6D7AC0B4B3E" id="Yaoqiang-_87E52808-857B-45B0-93E8-F6D7AC0B4B3E">
+        <dc:Bounds height="32.0" width="32.0" x="462.0" y="548.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_EBE375AE-E49A-47F7-8E04-DA6A1532ECC2" id="Yaoqiang-_EBE375AE-E49A-47F7-8E04-DA6A1532ECC2" isExpanded="true">
+        <dc:Bounds height="720.0" width="1327.0" x="627.0" y="24.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_956694A6-DFD0-4422-800E-A7DF51A627C0" id="Yaoqiang-_956694A6-DFD0-4422-800E-A7DF51A627C0">
+        <dc:Bounds height="68.0" width="85.0" x="2018.0" y="250.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_78172A06-7EC8-47CC-B49B-01EAD0676195" id="Yaoqiang-_78172A06-7EC8-47CC-B49B-01EAD0676195">
+        <dc:Bounds height="68.0" width="85.0" x="2241.0" y="250.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_4CFC937C-2E42-4671-859E-42E710931963" id="Yaoqiang-_4CFC937C-2E42-4671-859E-42E710931963">
+        <dc:Bounds height="32.0" width="32.0" x="2368.0" y="268.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_12A4A22E-9449-4E50-BDFC-AC00C8DE8660" id="Yaoqiang-_12A4A22E-9449-4E50-BDFC-AC00C8DE8660">
+        <dc:Bounds height="68.0" width="85.0" x="2134.0" y="250.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_44E5E2EF-2B2F-4689-8531-4D451808B0A6" id="Yaoqiang-_44E5E2EF-2B2F-4689-8531-4D451808B0A6">
+        <dc:Bounds height="38.0" width="29.0" x="254.0" y="545.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_6F155721-2EB2-4570-BFE0-E39C0B3EAD82" id="Yaoqiang-_6F155721-2EB2-4570-BFE0-E39C0B3EAD82">
+        <dc:Bounds height="38.0" width="29.0" x="143.0" y="320.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_FA77D7D8-9C02-4006-942A-B003AEDA5E3C" id="Yaoqiang-_FA77D7D8-9C02-4006-942A-B003AEDA5E3C">
+        <dc:Bounds height="32.0" width="32.0" x="667.0" y="268.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_7D509478-6734-4004-B618-32339FA33D31" id="Yaoqiang-_7D509478-6734-4004-B618-32339FA33D31" isMarkerVisible="true">
+        <dc:Bounds height="42.0" width="42.0" x="734.0" y="263.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_AF4F8D5E-E399-4ED8-992F-9AA653C17D6E" id="Yaoqiang-_AF4F8D5E-E399-4ED8-992F-9AA653C17D6E" isExpanded="true">
+        <dc:Bounds height="226.0" width="426.0" x="801.0" y="480.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_91C1F9A1-0EB9-4FD4-A2A7-99C2E8C34854" id="Yaoqiang-_91C1F9A1-0EB9-4FD4-A2A7-99C2E8C34854">
+        <dc:Bounds height="68.0" width="85.0" x="811.0" y="250.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_A9E2794B-4C41-429B-9C04-46C5B8741DDC" id="Yaoqiang-_A9E2794B-4C41-429B-9C04-46C5B8741DDC">
+        <dc:Bounds height="68.0" width="85.0" x="930.0" y="250.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_EA5D13A2-32CB-4F3D-80EF-F0886538C228" id="Yaoqiang-_EA5D13A2-32CB-4F3D-80EF-F0886538C228" isMarkerVisible="true">
+        <dc:Bounds height="42.0" width="42.0" x="1050.0" y="263.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_8040CF1A-3CAA-4A98-8E94-DD405EF233E9" id="Yaoqiang-_8040CF1A-3CAA-4A98-8E94-DD405EF233E9">
+        <dc:Bounds height="68.0" width="85.0" x="1108.0" y="144.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_5C0BF369-3360-43C3-9792-3E6492BA7291" id="Yaoqiang-_5C0BF369-3360-43C3-9792-3E6492BA7291" isMarkerVisible="true">
+        <dc:Bounds height="42.0" width="42.0" x="1208.0" y="263.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_C89D1737-9813-44C2-A5D5-87649AE7AEC6" id="Yaoqiang-_C89D1737-9813-44C2-A5D5-87649AE7AEC6" isExpanded="true">
+        <dc:Bounds height="228.0" width="451.0" x="1339.0" y="478.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_071B5D0A-5225-4E55-9105-8D15169DAC96" id="Yaoqiang-_071B5D0A-5225-4E55-9105-8D15169DAC96">
+        <dc:Bounds height="68.0" width="85.0" x="1359.0" y="250.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_2A752317-508C-4BB1-9AE7-49FBC7391B2B" id="Yaoqiang-_2A752317-508C-4BB1-9AE7-49FBC7391B2B">
+        <dc:Bounds height="68.0" width="85.0" x="1489.0" y="250.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_B78F09D7-A493-4FDC-B20C-B251C7405D95" id="Yaoqiang-_B78F09D7-A493-4FDC-B20C-B251C7405D95" isMarkerVisible="true">
+        <dc:Bounds height="42.0" width="42.0" x="1620.0" y="263.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_DFFBC045-8147-468B-BC85-DAF1134E19CF" id="Yaoqiang-_DFFBC045-8147-468B-BC85-DAF1134E19CF">
+        <dc:Bounds height="68.0" width="85.0" x="1744.0" y="250.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_B67579E4-E038-4D9D-AA46-A3F9628CADA1" id="Yaoqiang-_B67579E4-E038-4D9D-AA46-A3F9628CADA1">
+        <dc:Bounds height="32.0" width="32.0" x="1880.0" y="268.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_A5699C3D-74E0-497C-8B62-607B9909A0C9" id="Yaoqiang-_A5699C3D-74E0-497C-8B62-607B9909A0C9">
+        <dc:Bounds height="38.0" width="29.0" x="1489.0" y="144.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_25E36E2C-9196-4170-8BA3-52DDF55D177E" id="Yaoqiang-_25E36E2C-9196-4170-8BA3-52DDF55D177E">
+        <dc:Bounds height="32.0" width="32.0" x="843.0" y="602.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_D226B9E0-0194-481E-AAEC-32473D45FEEF" id="Yaoqiang-_D226B9E0-0194-481E-AAEC-32473D45FEEF">
+        <dc:Bounds height="68.0" width="85.0" x="938.0" y="584.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_4C551546-C127-4CD9-9106-78A3FC8978A6" id="Yaoqiang-_4C551546-C127-4CD9-9106-78A3FC8978A6">
+        <dc:Bounds height="32.0" width="32.0" x="1115.0" y="601.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_C96534C9-934E-415D-8903-28DA8712B25E" id="Yaoqiang-_C96534C9-934E-415D-8903-28DA8712B25E">
+        <dc:Bounds height="38.0" width="29.0" x="1018.0" y="489.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_F9A272EE-D325-44CF-AFFC-4A615D2C9971" id="Yaoqiang-_F9A272EE-D325-44CF-AFFC-4A615D2C9971">
+        <dc:Bounds height="32.0" width="32.0" x="1396.0" y="602.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_52CCF00D-C0E3-4931-8D4E-6C989E317A07" id="Yaoqiang-_52CCF00D-C0E3-4931-8D4E-6C989E317A07">
+        <dc:Bounds height="68.0" width="85.0" x="1474.0" y="583.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_2BBAB508-4026-40F7-8FC3-23E68E77EE46" id="Yaoqiang-_2BBAB508-4026-40F7-8FC3-23E68E77EE46">
+        <dc:Bounds height="32.0" width="32.0" x="1687.0" y="601.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_4134CEB9-F012-4F9E-9EF3-932E18E731E5" id="Yaoqiang-_4134CEB9-F012-4F9E-9EF3-932E18E731E5">
+        <dc:Bounds height="38.0" width="29.0" x="1546.0" y="487.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="_9DBCFE15-F025-4A3B-A3F7-41BFCFA182D1" id="Yaoqiang-_9DBCFE15-F025-4A3B-A3F7-41BFCFA182D1" sourceElement="_52CCF00D-C0E3-4931-8D4E-6C989E317A07" targetElement="_4134CEB9-F012-4F9E-9EF3-932E18E731E5">
+        <di:waypoint x="1490.0" y="583.3333333333334"/>
+        <di:waypoint x="1490.0" y="506.0"/>
+        <di:waypoint x="1546.0" y="506.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_F165F4A8-69B1-4B19-A1A4-470BDE12FA77" id="Yaoqiang-_F165F4A8-69B1-4B19-A1A4-470BDE12FA77" sourceElement="_91C1F9A1-0EB9-4FD4-A2A7-99C2E8C34854" targetElement="_A9E2794B-4C41-429B-9C04-46C5B8741DDC">
+        <di:waypoint x="896.6666666666666" y="284.0"/>
+        <di:waypoint x="930.0" y="284.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_C2B6A48C-B636-4186-955B-9C73CD3FA580" id="Yaoqiang-_C2B6A48C-B636-4186-955B-9C73CD3FA580" sourceElement="_44E5E2EF-2B2F-4689-8531-4D451808B0A6" targetElement="_D4804AD8-3EE4-47F1-942C-D9EAEA2811F0">
+        <di:waypoint x="283.3333333333333" y="564.0"/>
+        <di:waypoint x="329.0" y="564.0"/>
+        <di:waypoint x="329.0" y="475.33333333333337"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_8C74C362-DDEF-48B9-AED2-E4034E917A40" id="Yaoqiang-_8C74C362-DDEF-48B9-AED2-E4034E917A40" sourceElement="_2A752317-508C-4BB1-9AE7-49FBC7391B2B" targetElement="_B78F09D7-A493-4FDC-B20C-B251C7405D95">
+        <di:waypoint x="1574.0" y="284.0"/>
+        <di:waypoint x="1586.0" y="284.0"/>
+        <di:waypoint x="1620.6666666666667" y="284.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_751A4C0A-FC0F-441E-A587-4016BE8101B3" id="Yaoqiang-_751A4C0A-FC0F-441E-A587-4016BE8101B3" sourceElement="_5C0BF369-3360-43C3-9792-3E6492BA7291" targetElement="_071B5D0A-5225-4E55-9105-8D15169DAC96">
+        <di:waypoint x="1250.0" y="284.0"/>
+        <di:waypoint x="1359.3333333333333" y="284.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_94CD5662-8EB9-4B23-A486-8B6970314AD7" id="Yaoqiang-_94CD5662-8EB9-4B23-A486-8B6970314AD7" sourceElement="_D226B9E0-0194-481E-AAEC-32473D45FEEF" targetElement="_C96534C9-934E-415D-8903-28DA8712B25E">
+        <di:waypoint x="954.0" y="584.6666666666666"/>
+        <di:waypoint x="954.0" y="509.0"/>
+        <di:waypoint x="1018.0" y="509.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_62BD6E5E-B5C0-4719-86CE-D5E30A1D128F" id="Yaoqiang-_62BD6E5E-B5C0-4719-86CE-D5E30A1D128F" sourceElement="_25E36E2C-9196-4170-8BA3-52DDF55D177E" targetElement="_D226B9E0-0194-481E-AAEC-32473D45FEEF">
+        <di:waypoint x="875.3333333333334" y="618.0"/>
+        <di:waypoint x="887.0" y="618.0"/>
+        <di:waypoint x="938.0" y="618.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_0884CEBC-44CE-4BE2-958F-8941946BDA64" id="Yaoqiang-_0884CEBC-44CE-4BE2-958F-8941946BDA64" sourceElement="_EBE375AE-E49A-47F7-8E04-DA6A1532ECC2" targetElement="_956694A6-DFD0-4422-800E-A7DF51A627C0">
+        <di:waypoint x="1954.0" y="283.0"/>
+        <di:waypoint x="1968.0" y="283.0"/>
+        <di:waypoint x="2018.0" y="283.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_79CF3D66-DDC0-4E70-A721-206B98C9106D" id="Yaoqiang-_79CF3D66-DDC0-4E70-A721-206B98C9106D" sourceElement="_956694A6-DFD0-4422-800E-A7DF51A627C0" targetElement="_12A4A22E-9449-4E50-BDFC-AC00C8DE8660">
+        <di:waypoint x="2103.3333333333335" y="284.0"/>
+        <di:waypoint x="2134.0" y="284.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_9EB2F46F-FA87-4DB3-9EA5-4CBA7FC355B2" id="Yaoqiang-_9EB2F46F-FA87-4DB3-9EA5-4CBA7FC355B2" sourceElement="_6F155721-2EB2-4570-BFE0-E39C0B3EAD82" targetElement="_BA2B78BE-06A0-46C8-9BA2-D9EC923FDEAA">
+        <di:waypoint x="172.66666666666666" y="339.0"/>
+        <di:waypoint x="209.0" y="339.0"/>
+        <di:waypoint x="209.0" y="407.3333333333333"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_FE1BBBD3-1730-4BC0-895D-76106317615D" id="Yaoqiang-_FE1BBBD3-1730-4BC0-895D-76106317615D" sourceElement="_A9E2794B-4C41-429B-9C04-46C5B8741DDC" targetElement="_EA5D13A2-32CB-4F3D-80EF-F0886538C228">
+        <di:waypoint x="1015.3333333333333" y="284.0"/>
+        <di:waypoint x="1028.0" y="284.0"/>
+        <di:waypoint x="1050.0" y="284.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_F298A83E-5AD6-4BB6-95AF-E5B0A26A51FC" id="Yaoqiang-_F298A83E-5AD6-4BB6-95AF-E5B0A26A51FC" sourceElement="_8040CF1A-3CAA-4A98-8E94-DD405EF233E9" targetElement="_EA5D13A2-32CB-4F3D-80EF-F0886538C228">
+        <di:waypoint x="1108.6666666666667" y="178.0"/>
+        <di:waypoint x="1070.0" y="178.0"/>
+        <di:waypoint x="1070.0" y="264.625"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_E2740126-A38E-40E2-9FA9-554778B51381" id="Yaoqiang-_E2740126-A38E-40E2-9FA9-554778B51381" sourceElement="_7D509478-6734-4004-B618-32339FA33D31" targetElement="_91C1F9A1-0EB9-4FD4-A2A7-99C2E8C34854">
+        <di:waypoint x="776.6666666666666" y="284.0"/>
+        <di:waypoint x="789.0" y="284.0"/>
+        <di:waypoint x="811.3333333333334" y="284.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_3654E294-536A-4CD2-9950-11F02657EE60" id="Yaoqiang-_3654E294-536A-4CD2-9950-11F02657EE60" sourceElement="_F7498C3B-5925-415A-80D7-D16758B353C9" targetElement="_87E52808-857B-45B0-93E8-F6D7AC0B4B3E">
+        <di:waypoint x="427.0" y="461.0"/>
+        <di:waypoint x="427.0" y="564.0"/>
+        <di:waypoint x="462.0138949222909" y="564.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_1F31B20E-FE41-440D-9D44-E7437D1639C6" id="Yaoqiang-_1F31B20E-FE41-440D-9D44-E7437D1639C6" sourceElement="_D4804AD8-3EE4-47F1-942C-D9EAEA2811F0" targetElement="_F7498C3B-5925-415A-80D7-D16758B353C9">
+        <di:waypoint x="372.6666666666667" y="441.0"/>
+        <di:waypoint x="385.0" y="441.0"/>
+        <di:waypoint x="407.6666666666667" y="441.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_7586D519-92CA-4824-93B9-59E925689D65" id="Yaoqiang-_7586D519-92CA-4824-93B9-59E925689D65" sourceElement="_A5699C3D-74E0-497C-8B62-607B9909A0C9" targetElement="_2A752317-508C-4BB1-9AE7-49FBC7391B2B">
+        <di:waypoint x="1518.0" y="163.0"/>
+        <di:waypoint x="1544.0" y="163.0"/>
+        <di:waypoint x="1544.0" y="250.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_53EFF0AE-C44D-4EA4-A3AF-FA7E52B4CE52" id="Yaoqiang-_53EFF0AE-C44D-4EA4-A3AF-FA7E52B4CE52" sourceElement="_EA5D13A2-32CB-4F3D-80EF-F0886538C228" targetElement="_5C0BF369-3360-43C3-9792-3E6492BA7291">
+        <di:waypoint x="1092.6666666666667" y="284.0"/>
+        <di:waypoint x="1208.6666666666667" y="284.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_896FB358-BF3A-4609-8E83-8405D72DEA9B" id="Yaoqiang-_896FB358-BF3A-4609-8E83-8405D72DEA9B" sourceElement="_51BDA265-2FF5-40CB-B68D-1FBF9DAAA74C" targetElement="_BA2B78BE-06A0-46C8-9BA2-D9EC923FDEAA">
+        <di:waypoint x="132.635386089338" y="441.0"/>
+        <di:waypoint x="145.0" y="441.0"/>
+        <di:waypoint x="167.33333333333334" y="441.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_3B161ED4-4C10-4349-9A2D-B4E002D5EC0E" id="Yaoqiang-_3B161ED4-4C10-4349-9A2D-B4E002D5EC0E" sourceElement="_F7498C3B-5925-415A-80D7-D16758B353C9" targetElement="_EBE375AE-E49A-47F7-8E04-DA6A1532ECC2">
+        <di:waypoint x="427.0" y="421.6666666666667"/>
+        <di:waypoint x="427.0" y="283.0"/>
+        <di:waypoint x="627.3333333333334" y="283.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_CF5A1710-35F8-48B6-85FD-A90C99FEC5B3" id="Yaoqiang-_CF5A1710-35F8-48B6-85FD-A90C99FEC5B3" sourceElement="_F9A272EE-D325-44CF-AFFC-4A615D2C9971" targetElement="_52CCF00D-C0E3-4931-8D4E-6C989E317A07">
+        <di:waypoint x="1428.635386089338" y="617.0"/>
+        <di:waypoint x="1440.0" y="617.0"/>
+        <di:waypoint x="1474.0" y="617.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_BEFA7BF4-D1C2-47CB-B0CD-EF87E541B1BC" id="Yaoqiang-_BEFA7BF4-D1C2-47CB-B0CD-EF87E541B1BC" sourceElement="_5C0BF369-3360-43C3-9792-3E6492BA7291" targetElement="_8040CF1A-3CAA-4A98-8E94-DD405EF233E9">
+        <di:waypoint x="1229.0" y="263.6666666666667"/>
+        <di:waypoint x="1229.0" y="178.0"/>
+        <di:waypoint x="1192.6666666666667" y="178.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_9088D441-44C5-462B-8695-47D60A7BC451" id="Yaoqiang-_9088D441-44C5-462B-8695-47D60A7BC451" sourceElement="_78172A06-7EC8-47CC-B49B-01EAD0676195" targetElement="_4CFC937C-2E42-4671-859E-42E710931963">
+        <di:waypoint x="2326.0" y="284.0"/>
+        <di:waypoint x="2338.0" y="284.0"/>
+        <di:waypoint x="2368.6805615889575" y="284.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_56B35746-D946-481B-95EF-27D2CB8F4D29" id="Yaoqiang-_56B35746-D946-481B-95EF-27D2CB8F4D29" sourceElement="_DFFBC045-8147-468B-BC85-DAF1134E19CF" targetElement="_B67579E4-E038-4D9D-AA46-A3F9628CADA1">
+        <di:waypoint x="1828.6666666666667" y="284.0"/>
+        <di:waypoint x="1841.0" y="284.0"/>
+        <di:waypoint x="1880.6805615889577" y="284.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_222A5787-C138-497B-8638-02121C5E0477" id="Yaoqiang-_222A5787-C138-497B-8638-02121C5E0477" sourceElement="_BA2B78BE-06A0-46C8-9BA2-D9EC923FDEAA" targetElement="_D4804AD8-3EE4-47F1-942C-D9EAEA2811F0">
+        <di:waypoint x="252.66666666666669" y="441.0"/>
+        <di:waypoint x="287.3333333333333" y="441.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_4799D2B0-A204-4A08-94ED-796C25D9AE57" id="Yaoqiang-_4799D2B0-A204-4A08-94ED-796C25D9AE57" sourceElement="_B78F09D7-A493-4FDC-B20C-B251C7405D95" targetElement="_DFFBC045-8147-468B-BC85-DAF1134E19CF">
+        <di:waypoint x="1662.0" y="284.0"/>
+        <di:waypoint x="1675.0" y="284.0"/>
+        <di:waypoint x="1744.6666666666667" y="284.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_CB71865E-954A-4D3D-874F-8DB33A5B391B" id="Yaoqiang-_CB71865E-954A-4D3D-874F-8DB33A5B391B" sourceElement="_12A4A22E-9449-4E50-BDFC-AC00C8DE8660" targetElement="_78172A06-7EC8-47CC-B49B-01EAD0676195">
+        <di:waypoint x="2219.3333333333335" y="284.0"/>
+        <di:waypoint x="2240.6666666666665" y="284.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_D5635CA0-2E65-458D-A25B-B7EAC7E888E2" id="Yaoqiang-_D5635CA0-2E65-458D-A25B-B7EAC7E888E2" sourceElement="_BA2B78BE-06A0-46C8-9BA2-D9EC923FDEAA" targetElement="_44E5E2EF-2B2F-4689-8531-4D451808B0A6">
+        <di:waypoint x="209.0" y="475.33333333333337"/>
+        <di:waypoint x="209.0" y="564.0"/>
+        <di:waypoint x="254.0" y="564.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_24A3FEEC-8DE6-42DC-9B85-D076EB8909A4" id="Yaoqiang-_24A3FEEC-8DE6-42DC-9B85-D076EB8909A4" sourceElement="_D226B9E0-0194-481E-AAEC-32473D45FEEF" targetElement="_4C551546-C127-4CD9-9106-78A3FC8978A6">
+        <di:waypoint x="1023.3333333333333" y="618.0"/>
+        <di:waypoint x="1035.0" y="618.0"/>
+        <di:waypoint x="1115.388985675865" y="618.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_19517CEB-6A0E-4B88-8911-FEEEFE3B55CE" id="Yaoqiang-_19517CEB-6A0E-4B88-8911-FEEEFE3B55CE" sourceElement="_52CCF00D-C0E3-4931-8D4E-6C989E317A07" targetElement="_2BBAB508-4026-40F7-8FC3-23E68E77EE46">
+        <di:waypoint x="1559.3333333333333" y="617.0"/>
+        <di:waypoint x="1571.0" y="617.0"/>
+        <di:waypoint x="1687.3368059323975" y="617.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_9C46FDB0-2EBD-4B2F-A72A-0189A4D76A73" id="Yaoqiang-_9C46FDB0-2EBD-4B2F-A72A-0189A4D76A73" sourceElement="_B78F09D7-A493-4FDC-B20C-B251C7405D95" targetElement="_7D509478-6734-4004-B618-32339FA33D31">
+        <di:waypoint x="1640.0" y="303.3333333333333"/>
+        <di:waypoint x="1640.0" y="343.0"/>
+        <di:waypoint x="754.0" y="343.0"/>
+        <di:waypoint x="755.0" y="304.34375"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_77A40DB9-8B5A-4E50-9138-ADCA63E4A219" id="Yaoqiang-_77A40DB9-8B5A-4E50-9138-ADCA63E4A219" sourceElement="_FA77D7D8-9C02-4006-942A-B003AEDA5E3C" targetElement="_7D509478-6734-4004-B618-32339FA33D31">
+        <di:waypoint x="699.3194384110424" y="284.0"/>
+        <di:waypoint x="734.0" y="284.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_7BCC27D0-D619-4895-92F5-4516D9583479" id="Yaoqiang-_7BCC27D0-D619-4895-92F5-4516D9583479" sourceElement="_071B5D0A-5225-4E55-9105-8D15169DAC96" targetElement="_2A752317-508C-4BB1-9AE7-49FBC7391B2B">
+        <di:waypoint x="1444.6666666666667" y="272.0"/>
+        <di:waypoint x="1456.0" y="272.0"/>
+        <di:waypoint x="1488.6666666666667" y="272.0"/>
+        <bpmndi:BPMNLabel/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</semantic:definitions>
