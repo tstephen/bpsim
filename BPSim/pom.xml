@@ -72,7 +72,21 @@
   </dependencies>
   
   <build>
-    <plugins>
+      <resources>
+        <resource>
+          <directory>BPSim-1.0</directory>
+          <includes>
+            <include>**/*</include>
+          </includes>
+        </resource>
+        <resource>
+          <directory>BPSim Implementer's Guide v1.0/Examples</directory>
+          <includes>
+            <include>**/*</include>
+          </includes>
+        </resource>
+      </resources>
+      <plugins>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <inherited>true</inherited>

@@ -32,6 +32,7 @@ public class LoanProcessTest {
     private static final int DEFAULT_PRIORITY = 50;
 
     private static final String BPSIM_ORIGINAL = "Loan Process v1.0.bpmn";
+    private static final String BPSIM_BPI = "Loan Process v1.0-bpi-webmodeler.bpmn";
     private static final String BPSIM_MOD = "Loan Process v1.0-knowprocess.bpmn";
 
     @Rule
@@ -92,6 +93,13 @@ public class LoanProcessTest {
     // expressions because don't have support for throw intermediate msg event
     public void testBPSimOriginalInKnowProcess() {
         tweakAndRunInKnowProcess(BPSIM_ORIGINAL, "_6");
+    }
+
+    @Test
+    @Ignore
+    // Same problem as Original
+    public void testBPSimFromBpiInKnowProcess() {
+        tweakAndRunInKnowProcess(BPSIM_BPI, "_6");
     }
 
     @Test
