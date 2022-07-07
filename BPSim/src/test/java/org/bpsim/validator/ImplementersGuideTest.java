@@ -33,7 +33,7 @@ public class ImplementersGuideTest {
 	@Test
 	public void testCarRepairProcessBpmn() {
 		List<ValidationError> errors = validator
-				.validate("/Car Repair Process v0.17.bpmn");
+				.validate("/Car Repair Process v1.0.bpmn");
 		// ONE warning expected as not currently registering BPMN schemas.
 		assertEquals(1, errors.size());
 	}
@@ -41,7 +41,7 @@ public class ImplementersGuideTest {
 	@Test
 	public void testCarRepairProcessXpdl() {
 		List<ValidationError> errors = validator
-				.validate("/Car Repair Process v0.17.xpdl");
+				.validate("/Car Repair Process v1.0.xpdl");
 		// ONE warning expected as not currently registering XPDL schemas.
 		assertEquals(1, errors.size());
 	}
@@ -49,7 +49,7 @@ public class ImplementersGuideTest {
 	@Test
 	public void testLoanProcessBpmn() {
 		List<ValidationError> errors = validator
-				.validate("/Loan Process v0.17.bpmn");
+				.validate("/Loan Process v1.0.bpmn");
 		// ONE warning expected as not currently registering BPMN schemas.
 		assertEquals(1, errors.size());
 	}
@@ -57,7 +57,8 @@ public class ImplementersGuideTest {
 	@Test
 	public void testLoanProcessXpdl() {
 		List<ValidationError> errors = validator
-				.validate("/Loan Process v0.17.xpdl");
+				.validate("/Loan Process v1.0.xpdl");
+		System.out.println(errors);
 		// ONE warning expected as not currently registering XPDL schemas.
 		assertEquals(1, errors.size());
 	}
@@ -65,7 +66,7 @@ public class ImplementersGuideTest {
 	@Test
 	public void testTechnicalSupportBpmn() {
 		List<ValidationError> errors = validator
-				.validate("/Technical Support Process v0.17.bpmn");
+				.validate("/Technical Support Process v1.0.bpmn");
 		// ONE warning expected as not currently registering BPMN schemas.
 		assertEquals(1, errors.size());
 	}
@@ -73,7 +74,7 @@ public class ImplementersGuideTest {
 	@Test
 	public void testTechnicalSupportXpdl() {
 		List<ValidationError> errors = validator
-				.validate("/Technical Support Process v0.17.xpdl");
+				.validate("/Technical Support Process v1.0.xpdl");
 		// ONE warning expected as not currently registering XPDL schemas.
 		assertEquals(1, errors.size());
 	}

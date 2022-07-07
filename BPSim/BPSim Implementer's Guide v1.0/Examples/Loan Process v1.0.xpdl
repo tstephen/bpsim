@@ -12,7 +12,7 @@
         <Page Height="1539.0" Id="6" Name="Loan Origination" Width="2197.0"/>
     </Pages>
     <Pools>
-        <Pool BoundaryVisible="false" Id="1364754651588" Process="6">
+        <Pool BoundaryVisible="false" Id="1364754651588" Process="_6">
             <Lanes>
                 <Lane Id="_81354509-EC39-44E5-A266-4286CBB1EFAC" Name="Loan officer" Orientation="HORIZONTAL">
                     <NodeGraphicsInfos>
@@ -44,7 +44,7 @@
         </Pool>
     </Pools>
     <WorkflowProcesses>
-        <WorkflowProcess Id="6">
+        <WorkflowProcess Id="_6">
             <ProcessHeader/>
             <DataFields>
                 <DataField Id="DF1364754651589" IsArray="false">
@@ -572,7 +572,7 @@
                     <bpsim:DurationParameter value="PT40H"/>
                 </bpsim:Duration>
             </bpsim:ScenarioParameters>
-            <bpsim:ElementParameters elementRef="6">
+            <bpsim:ElementParameters elementRef="_6">
                 <bpsim:TimeParameters>
                     <bpsim:ProcessingTime>
                         <bpsim:ResultRequest>min</bpsim:ResultRequest>

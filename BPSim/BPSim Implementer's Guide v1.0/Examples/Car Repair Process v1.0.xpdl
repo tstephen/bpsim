@@ -13,7 +13,7 @@
     </Pages>
     <Pools/>
     <WorkflowProcesses>
-        <WorkflowProcess Id="6">
+        <WorkflowProcess Id="_6">
             <ProcessHeader/>
             <DataFields>
                 <DataField Id="DF1364754606201" IsArray="false">
@@ -690,7 +690,7 @@
                     <bpsim:DurationParameter value="PT60H"/>
                 </bpsim:Duration>
             </bpsim:ScenarioParameters>
-            <bpsim:ElementParameters elementRef="6">
+            <bpsim:ElementParameters elementRef="_6">
                 <bpsim:ControlParameters>
                     <bpsim:TriggerCount>
                         <bpsim:ResultRequest>count</bpsim:ResultRequest>
