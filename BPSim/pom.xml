@@ -7,7 +7,7 @@
   
   <properties>
     <java.version>1.6</java.version>
-    <activiti-version>5.13-SNAPSHOT</activiti-version>
+    <activiti-version>5.23.0</activiti-version>
   </properties>
   
   <dependencies>
@@ -17,7 +17,7 @@
       <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
-      <dependency>
+    <dependency>
       <groupId>org.activiti</groupId>
       <artifactId>activiti-engine</artifactId>
       <version>${activiti-version}</version>
@@ -62,40 +62,34 @@
       <artifactId>log4j</artifactId>
       <version>1.2.17</version>
     </dependency>
-  
-    <dependency>
-      <groupId>com.knowprocess</groupId>
-      <artifactId>service-tasks</artifactId>
-      <version>[0.0.1,1.0.0)</version>
-    </dependency>
     
   </dependencies>
   
   <build>
-      <resources>
-        <resource>
-          <directory>BPSim-1.0</directory>
-          <includes>
-            <include>**/*</include>
-          </includes>
-        </resource>
-        <resource>
-          <directory>BPSim Implementer's Guide v1.0/Examples</directory>
-          <includes>
-            <include>**/*</include>
-          </includes>
-        </resource>
-      </resources>
-      <plugins>
-        <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <inherited>true</inherited>
-          <configuration>
-            <source>${java.version}</source>
-            <target>${java.version}</target>
-          </configuration>
-          <version>2.3.2</version>
-        </plugin>
+    <resources>
+      <resource>
+        <directory>BPSim-1.0</directory>
+        <includes>
+          <include>**/*</include>
+        </includes>
+      </resource>
+      <resource>
+        <directory>BPSim Implementer's Guide v1.0/Examples</directory>
+        <includes>
+          <include>**/*</include>
+        </includes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <inherited>true</inherited>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+        </configuration>
+        <version>2.3.2</version>
+      </plugin>
     </plugins>
   </build>
 </project>
